@@ -23,7 +23,7 @@ Open-source Django generator and app customizer. The project is basically an int
 
 ## How to use it
 
-> Download the code 
+> 👉 Download the code 
 
 ```bash
 $ # Get the code
@@ -33,7 +33,7 @@ $ cd rocket-django
 
 <br />
 
-> Install modules via `VENV`  
+> 👉 Install modules via `VENV`  
 
 ```bash
 $ virtualenv env
@@ -43,7 +43,7 @@ $ pip install -r requirements.txt
 
 <br />
 
-> Use the tool
+> 👉 Use the tool
 
 ```bash
 $ python runner.py        # test command  
@@ -53,4 +53,4 @@ $ python runner.py <CMD>  # executes a subcommand
 <br />
 
 ---
-Rocket Django - Open-source generator for Django provided by **[AppSeed Generator](https://appseed.us/generator/)**.
+**Rocket Django** - Open-source generator for Django provided by **[AppSeed Generator](https://appseed.us/generator/)**.
