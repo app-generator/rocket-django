@@ -8,5 +8,5 @@ from util import *
 # Entry point
 if __name__ == "__main__":
     
-    # dummy helper to test the imports
-    hello()
+    # This will create and start a project in SRC
+    project_create()
