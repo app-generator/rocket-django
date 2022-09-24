@@ -10,7 +10,7 @@ Open-source Django generator and app customizer. The project is basically an int
 
 | Status | Action | CMD | Info | 
 | --- | --- | --- | --- |
-| ✅ | **Code basic structure** | `runner.py` (entry point) | --- |
+| ✅ | **Code basic structure** | `runner.py` (entry point) | - |
 | ❌ | **Create a Django project** | `$ python runner.py create` | Generate a new project in `src` |
 | ❌ | **Add authentication** | `$ python runner.py XXX` | @Todo |
 | ❌ | **Use SQLite** | `$ python runner.py XXX` | @Todo |
