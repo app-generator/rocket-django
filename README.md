@@ -11,7 +11,7 @@ Open-source Django generator and app customizer. The project is basically an int
 | Status | Action | CMD | Info | 
 | --- | --- | --- | --- |
 | ✅ | **Code basic structure** | `runner.py` (entry point) | - |
-| ❌ | **Create a Django project** | `$ python runner.py create` | Save new project in `src` |
+| ✅ | **Create a Django project** | `$ python runner.py` | Create & start new project `src` DIR |
 | ❌ | **Add authentication** | `$ python runner.py XXX` | @Todo |
 | ❌ | **Use SQLite** | `$ python runner.py XXX` | @Todo |
 | ❌ | **Use MySql** | `$ python runner.py XXX` | @Todo |
@@ -46,8 +46,7 @@ $ pip install -r requirements.txt
 > 👉 Use the tool
 
 ```bash
-$ python runner.py        # test command  
-$ python runner.py <CMD>  # executes a subcommand  
+$ python runner.py  # generate a project in SRC dir  
 ```
 
 <br />
