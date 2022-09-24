@@ -21,5 +21,36 @@ Open-source Django generator and app customizer. The project is basically an int
 
 <br />
 
+## How to use it
+
+> Download the code 
+
+```bash
+$ # Get the code
+$ git clone https://github.com/app-generator/rocket-django.git
+$ cd rocket-django
+```
+
+<br />
+
+> Install modules via `VENV`  
+
+```bash
+$ virtualenv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
+<br />
+
+> Use the tool
+
+```bash
+$ python runner.py        # test command  
+$ python runner.py <CMD>  # executes a subcommand  
+```
+
+<br />
+
 ---
 Rocket Django - Open-source generator for Django provided by **[AppSeed Generator](https://appseed.us/generator/)**.
