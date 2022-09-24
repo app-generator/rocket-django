@@ -7,6 +7,7 @@ import os
 import shutil
 import fnmatch
 import json
+from   pathlib import Path
 
 from .common  import *
 
@@ -23,13 +24,13 @@ def dir_exists( path ):
             return False
         
     except:
-        print ( ' *** DIR not found = ' + path )
+        #print ( ' *** DIR not found = ' + path )
         return False    
 
 def dir_create( path ):
 
     if dir_exists( path ):
-        print ( ' *** DIR exists = ' + path )
+        #print ( ' *** DIR exists = ' + path )
         return False    
 
     try:
@@ -38,7 +39,7 @@ def dir_create( path ):
         return True
         
     except Exception as e:
-        print ( ' *** Err creating DIR: ' + str(e) )
+        #print ( ' *** Err creating DIR: ' + str(e) )
         return False    
 
 def dir_copy(src, dst, symlinks=False, ignore=None):
@@ -60,7 +61,7 @@ def dir_copy(src, dst, symlinks=False, ignore=None):
         return True
 
     except Exception as e:
-        print ( ' *** Err copy DIR: ' + str(e) )
+        #print ( ' *** Err copy DIR: ' + str(e) )
         return False 
 
 def dir_subdirs( path ):
@@ -72,17 +73,17 @@ def dir_subdirs( path ):
         all_dirs.remove( path )
 
     return all_dirs    
-    
+
 def file_exists( path ):
 
     try:
 
         if open( path, 'r'):
-            print ( ' *** File exists = ' + path )
+            #print ( ' *** File exists = ' + path )
             return True
 
     except:
-        print ( ' *** File not found = ' + path )
+        #print ( ' *** File not found = ' + path )
         return False    
 
 def file_read( path, encoding='utf8' ):
@@ -131,26 +132,26 @@ def file_load( path, as_list=False ):
         print (' *** Err loading file: ' + str(path) )
         return None
 
-def file_write( file_path, new_content, f_append=False ): 
+def file_write( path, content, f_append=False ): 
 
     try:
 
         f = None
 
-        if file_exists( file_path ):
+        if file_exists( path ):
             if f_append:    
-                f = open( file_path, 'a+')
+                f = open( path, 'a+')
             else:
-                f = open( file_path, 'w+')    
+                f = open( path, 'w+')    
         else:
-            f = open( file_path, 'w+')
+            f = open( path, 'w+')
 
         if not f:
             #'Err open file'
             return False
 
         f.seek(0) 
-        f.write( new_content )
+        f.write( content )
         f.truncate()
 
         f.close()
@@ -158,13 +159,17 @@ def file_write( file_path, new_content, f_append=False ):
 
     except IOError:
 
-        print( 'ERR file_write(): File IOError: ' + file_path )
+        print( 'ERR file_write(): File IOError: ' + path )
         return False
 
     except:
 
         print ( ' *** Err processing file ' + str(file_path) )
         return False
+
+def file_create( path, content='' ):
+
+    return file_write( path, content )
 
 def file_append( file_path, new_content):
 
