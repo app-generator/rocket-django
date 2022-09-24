@@ -11,13 +11,13 @@ Open-source Django generator and app customizer. The project is basically an int
 | Status | Action | CMD | Info | 
 | --- | --- | --- | --- |
 | ✅ | **Code basic structure** | `runner.py` (entry point) | - |
-| ❌ | **Create a Django project** | `$ python runner.py create` | Generate a new project in `src` |
+| ❌ | **Create a Django project** | `$ python runner.py create` | Save new project in `src` |
 | ❌ | **Add authentication** | `$ python runner.py XXX` | @Todo |
 | ❌ | **Use SQLite** | `$ python runner.py XXX` | @Todo |
 | ❌ | **Use MySql** | `$ python runner.py XXX` | @Todo |
 | ❌ | **Docker** | `$ python runner.py docker <add/remove>` | Default argument: `add` |
 | ❌ | **Themes List** | `$ python runner.py themes` | List all available themes |
-| ❌ | **Theme Install** | `$ python runner.py theme volt` | Install  |
+| ❌ | **Theme Install** | `$ python runner.py theme volt` | Install `Volt` theme |
 
 <br />
 
