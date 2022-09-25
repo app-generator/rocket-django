@@ -16,7 +16,7 @@ Open-source Django generator and app customizer. The project is basically an int
 | ❌ | **Add authentication** | `$ python runner.py auth` | `Not Implemented` |
 | ❌ | **Use SQLite** | `$ python runner.py db sqlite` | `Not Implemented` |
 | ❌ | **Use MySql** | `$ python runner.py db mysql` | `Not Implemented` |
-| ❌ | **Docker** | `$ python runner.py docker <add/remove>` | `Not Implemented` |
+| ❌ | **Docker** | `$ python runner.py docker add` | `Not Implemented` |
 | ❌ | **Themes List** | `$ python runner.py themes` | `Not Implemented` |
 | ❌ | **Theme Install** | `$ python runner.py theme volt` | `Not Implemented` |
 
