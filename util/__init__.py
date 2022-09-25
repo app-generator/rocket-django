@@ -7,3 +7,4 @@ from .common    import *
 from .helpers   import *
 from .cli       import *
 from .generator import *
+from .parser    import *
