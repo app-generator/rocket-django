@@ -64,6 +64,13 @@ def dir_copy(src, dst, symlinks=False, ignore=None):
         #print ( ' *** Err copy DIR: ' + str(e) )
         return False 
 
+def dir_delete( path ):
+
+    if dir_exists( path ):
+        shutil.rmtree( path )
+
+    return True
+
 def dir_subdirs( path ):
 
     # this includes also path
@@ -103,9 +110,9 @@ def file_read( path, encoding='utf8' ):
         print(" *** UnicodeDecodeError: {0}".format(err))
         return None
 
-    except:
+    except Exception as e:
 
-        print (' *** Err loading file: ' + str(path) )
+        print (' *** Err loading file: ' + str( e ) )
         return None
 
 def file_load( path, as_list=False ):
@@ -127,9 +134,9 @@ def file_load( path, as_list=False ):
 
         print(" *** UnicodeDecodeError: {0}".format(err))
 
-    except:
+    except Exception as e:
 
-        print (' *** Err loading file: ' + str(path) )
+        print (' *** Err loading file: ' + str( e ) )
         return None
 
 def file_write( path, content, f_append=False ): 
@@ -234,3 +241,11 @@ def files_get(dir_to_scan, ext='*'):
             matches.append( item )
 
     return matches
+
+def h_del_lsep( line ):
+
+    if line:
+        line = line.replace('\n', '').replace('\r', '')
+
+    return line    
+ 
