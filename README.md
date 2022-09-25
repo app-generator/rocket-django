@@ -11,13 +11,14 @@ Open-source Django generator and app customizer. The project is basically an int
 | Status | Action | CMD | Info | 
 | --- | --- | --- | --- |
 | ✅ | **Code basic structure** | `runner.py` (entry point) | - |
-| ✅ | **Create a Django project** | `$ python runner.py` | Create & start new project `src` DIR |
-| ❌ | **Add authentication** | `$ python runner.py XXX` | @Todo |
-| ❌ | **Use SQLite** | `$ python runner.py XXX` | @Todo |
-| ❌ | **Use MySql** | `$ python runner.py XXX` | @Todo |
-| ❌ | **Docker** | `$ python runner.py docker <add/remove>` | Default argument: `add` |
-| ❌ | **Themes List** | `$ python runner.py themes` | List all available themes |
-| ❌ | **Theme Install** | `$ python runner.py theme volt` | Install `Volt` theme |
+| ✅ | **Create a Django project** | `$ python runner.py create` | Create new project in `src` DIR |
+| ✅ | **Start the generated project** | `$ python runner.py start` | Start on port `8000` |
+| ❌ | **Add authentication** | `$ python runner.py auth` | `Not Implemented` |
+| ❌ | **Use SQLite** | `$ python runner.py db sqlite` | `Not Implemented` |
+| ❌ | **Use MySql** | `$ python runner.py db mysql` | `Not Implemented` |
+| ❌ | **Docker** | `$ python runner.py docker <add/remove>` | `Not Implemented` |
+| ❌ | **Themes List** | `$ python runner.py themes` | `Not Implemented` |
+| ❌ | **Theme Install** | `$ python runner.py theme volt` | `Not Implemented` |
 
 <br />
 
