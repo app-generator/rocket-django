@@ -44,10 +44,18 @@ $ pip install -r requirements.txt
 
 <br />
 
-> 👉 Use the tool
+> 👉 Create a new project
 
 ```bash
-$ python runner.py  # generate a project in SRC dir  
+$ python runner.py create
+```
+
+<br />
+
+> 👉 Start the project
+
+```bash
+$ python runner.py start 
 ```
 
 <br />
