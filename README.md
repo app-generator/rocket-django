@@ -60,5 +60,9 @@ $ python runner.py start
 
 <br />
 
+![Rocket Django - Open-source generator for Django provided by AppSeed.](https://user-images.githubusercontent.com/51070104/192149059-e79b141d-d596-44e0-880f-749842b757b1.png)
+
+<br />
+
 ---
 **Rocket Django** - Open-source generator for Django provided by **[AppSeed Generator](https://appseed.us/generator/)**.
