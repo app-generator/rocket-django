@@ -1,6 +1,6 @@
 # Rocket Django
 
-Open-source Django generator and app customizer. The project is basically an interface over the AppSeed Service with a few local codebase processing currently unsupported by the LIVE App Generator. 
+Open-source **Django Generator and app customizer**. The project is basically an interface over the `AppSeed Service` with a few local codebase processing currently unsupported by the LIVE [App Generator](https://appseed.us/). 
 
 > Status: `UNSTABLE`, under development
 
@@ -65,4 +65,4 @@ $ python runner.py start
 <br />
 
 ---
-**Rocket Django** - Open-source generator for Django provided by **[AppSeed Generator](https://appseed.us/generator/)**.
+**Rocket Django** - Open-source generator for Django provided by **[App Generator](https://appseed.us/generator/)**.
