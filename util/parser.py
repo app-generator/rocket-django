@@ -14,7 +14,10 @@ def h_var_typology( content ):
     if '=' in content and '[' in content:
         return COMMON.CFG_VAR_LIST    
 
-    if '=' in content and not '[' in content:
+    if '=' in content and '{' in content:
+        return COMMON.CFG_VAR_DICT  
+
+    if '=' in content and not '[' in content and not '}' in content:
         return COMMON.CFG_VAR_SIMPLE
 
     # Default is unknown
@@ -39,6 +42,8 @@ def h_extract_sections( content ):
 
     print("Imports  : " + str( file_imports  ) )       
     print("Sections : " + str( file_sections ) ) 
+
+    return file_sections
 
 def settings_load( ):
 
@@ -163,3 +168,107 @@ def settings_var_print( var_name ):
          print(' > Var not found ')
 
     return retcode    
+
+def settings_section_get( section ):
+
+    retcode = COMMON.NOT_FOUND
+
+    retcode, content = settings_load()
+
+    if COMMON.OK != retcode:
+
+        print('Err loading settings file')
+        return retcode
+
+    section_content = []
+    section_begin   = False 
+    section_end     = False 
+    retcode         = COMMON.NOT_FOUND
+
+    # This is used to count [, {
+    section_control_begin = '' 
+    section_control_end   = '' 
+    section_control_idx   = 0 
+
+    for line in content:
+
+        line = h_del_lsep( line )
+
+        # We have an end here
+        if section_end:
+            break 
+
+        # Computing is over
+        if section_begin and section_control_idx == 0:
+            section_end = True 
+            retcode     = COMMON.OK
+            continue 
+
+        # Computing is active 
+        if section_begin:
+
+            section_content.append( line )
+
+            if section_control_begin in line:
+                section_control_idx += 1    
+
+            if section_control_end in line:
+                section_control_idx -= 1    
+
+        # Other things
+        if not section_begin and section not in line:
+            continue 
+
+        # Here is a match
+        if '=' in line: 
+            section_begin = True
+
+        # Detect topology 
+        var_typology = h_var_typology( line )
+
+        # Simple, one-time 
+        if COMMON.CFG_VAR_SIMPLE == var_typology:
+            
+            section_content.append( line )
+
+            section_end = True 
+            retcode     = COMMON.OK
+
+        # Lists (we can have mixed types)
+        if COMMON.CFG_VAR_LIST == var_typology:
+
+            # save the first line            
+            section_content.append( line )
+
+            section_begin = True 
+
+            retcode = COMMON.OK
+
+            section_control_begin = '['
+            section_control_end   = ']'
+            section_control_idx   = 1 
+
+        # Dicts (we can have mixed types)
+        if COMMON.CFG_VAR_DICT == var_typology:
+
+            # save the first line            
+            section_content.append( line )
+
+            section_begin = True 
+
+            retcode = COMMON.OK
+
+            section_control_begin = '{'
+            section_control_end   = '}'
+            section_control_idx   = 1 
+
+    # Exit
+    if COMMON.OK == retcode:
+        print( ' ' )
+        for item in section_content:
+            print ( item )         
+    else:    
+        print( ' > Section ['+section+'] not found ' )
+
+    # Exit point 
+    return retcode, section_content
