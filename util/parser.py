@@ -97,6 +97,81 @@ def settings_save( content ):
 
     return retcode
 
+def settings_imports():
+
+    retcode = COMMON.OK
+    imports = []
+
+    retcode, content = settings_load()
+
+    if COMMON.OK != retcode:
+
+        print('Err loading settings file')
+        return retcode, None
+
+    for line in content:
+
+        # import here    
+        if 'from ' in line or 'import ' in line:
+            imports.append ( h_del_lsep( line ) ) # strip line separators
+
+    return retcode, imports
+
+def settings_sections():
+
+    retcode  = COMMON.OK
+    sections = []
+
+    retcode, content = settings_load()
+
+    if COMMON.OK != retcode:
+
+        print('Err loading settings file')
+        return retcode, None
+
+    for line in content:
+
+        # import here    
+        if '=' in line:
+            sections.append( line.split('=')[0].strip() )
+
+    return retcode, sections
+
+# Remove double empty lines
+def settings_format():
+
+    retcode, content = settings_load()
+
+    if COMMON.OK != retcode:
+
+        print('Err loading settings file')
+        return retcode
+
+    new_content = []
+    prev_line   = 'NA'
+    
+    for line in content:
+
+        # remove line sep 
+        line_copy = h_del_lsep( line ).replace(' ', '')
+
+        # detect empty lines
+        if line_copy == '':
+
+            # the previous line was also empty, ignore it
+            if line_copy != prev_line:
+
+                prev_line = ''
+                new_content.append( line )
+
+        # non-empty line, save it    
+        else:
+            prev_line = line 
+            new_content.append( line )
+
+    # Update the new content
+    settings_save( new_content )
+
 def settings_var_upd( var_name, var_value):
 
     retcode = COMMON.NOT_FOUND
@@ -384,6 +459,7 @@ def settings_section_update( section, var_value ):
 
         # Save the content
         settings_save( new_content )
+        settings_format()
 
         print( ' ' )
         for item in section_content:
