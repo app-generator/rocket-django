@@ -25,7 +25,7 @@ class COMMON:
     CFG_VAR_NA        = 10 # Type is undetected
     CFG_VAR_SIMPLE    = 11 # Ex: SECRET_KEY
     CFG_VAR_LIST      = 12 # Ex: INSTALLED_APPS, MIDDLEWARE
-    CFG_VAR_MIXED     = 13 # List of Dicts, Ex: AUTH_PASSWORD_VALIDATORS 
+    CFG_VAR_DICT      = 13 # List of Dicts, Ex: AUTH_PASSWORD_VALIDATORS 
 
 # Recover errors for COMMON class
 def errInfo( aErrorCode ):
