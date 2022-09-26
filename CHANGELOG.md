@@ -1,5 +1,12 @@
 # Change Log
 
+## Unreleased
+### Improvements
+
+- Improve settings parser:
+  - sections print, replace, extract
+  - extract imports
+
 ## [0.0.3] 2022-09-25
 ### Improvements
 
