@@ -272,3 +272,124 @@ def settings_section_get( section ):
 
     # Exit point 
     return retcode, section_content
+
+def settings_section_update( section, var_value ):
+
+    retcode = COMMON.NOT_FOUND
+
+    retcode, content = settings_load()
+
+    if COMMON.OK != retcode:
+
+        print('Err loading settings file')
+        return retcode
+
+    section_content = []
+    section_begin   = False 
+    section_end     = False 
+    retcode         = COMMON.NOT_FOUND
+
+    # This is used to count [, {
+    section_control_begin = '' 
+    section_control_end   = '' 
+    section_control_idx   = 0 
+
+    new_content = []
+    for line in content:
+
+        # line = h_del_lsep( line )
+
+        # We have an end here
+        if section_end:
+            new_content.append( line )
+            continue 
+
+        # Computing is over
+        if section_begin and section_control_idx == 0:
+
+            # new content injected
+            new_content.append( var_value + os.linesep )
+
+            new_content.append( line )
+
+            section_end = True 
+            retcode     = COMMON.OK
+            continue 
+
+        # Computing is active 
+        if section_begin:
+
+            section_content.append( h_del_lsep( line ) )
+
+            if section_control_begin in line:
+                section_control_idx += 1    
+
+            if section_control_end in line:
+                section_control_idx -= 1    
+
+        # Other things
+        if not section_begin and section not in line:
+
+            new_content.append( line )
+            
+            continue 
+
+        # Here is a match
+        if '=' in line: 
+            section_begin = True
+
+        # Detect topology 
+        var_typology = h_var_typology( line )
+
+        # Simple, one-time 
+        if COMMON.CFG_VAR_SIMPLE == var_typology:
+            
+            new_content.append( var_value + os.linesep )
+            
+            section_content.append( h_del_lsep( line ) )
+
+            section_end = True 
+            retcode     = COMMON.OK
+
+        # Lists (we can have mixed types)
+        if COMMON.CFG_VAR_LIST == var_typology:
+
+            # save the first line            
+            section_content.append( h_del_lsep( line ) )
+
+            section_begin = True 
+
+            retcode = COMMON.OK
+
+            section_control_begin = '['
+            section_control_end   = ']'
+            section_control_idx   = 1 
+
+        # Dicts (we can have mixed types)
+        if COMMON.CFG_VAR_DICT == var_typology:
+
+            # save the first line            
+            section_content.append( h_del_lsep( line ) )
+
+            section_begin = True 
+
+            retcode = COMMON.OK
+
+            section_control_begin = '{'
+            section_control_end   = '}'
+            section_control_idx   = 1 
+
+    # Exit
+    if COMMON.OK == retcode:
+
+        # Save the content
+        settings_save( new_content )
+
+        print( ' ' )
+        for item in section_content:
+            print ( item )         
+    else:    
+        print( ' > Section ['+section+'] not found ' )
+
+    # Exit point 
+    return retcode, section_content
