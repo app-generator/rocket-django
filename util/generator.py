@@ -58,3 +58,23 @@ def project_start():
     if COMMON.OK != result:
         print('ERR: start the project: ' + stderr)
         exit(1)
+
+def project_create_app( appName ):
+
+    #print( 'Create app: ' + appName )
+    
+    # Check app exists
+    if dir_exists( os.path.join(DIR_SRC, appName ) ):
+        print('ERR: app already exists')
+        exit(1)        
+
+    os.chdir( DIR_SRC )
+
+    # Create project (SRC folder)
+    result, stdout, stderr = exec_cmd( 'django-admin startapp ' + appName )
+
+    if COMMON.OK != result:
+        print('ERR: creating app: ' + stderr)
+        exit(1)
+
+    print('App [' + appName + '] created successfully')
