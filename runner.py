@@ -20,6 +20,7 @@ ACTIONS = {
     'create' : ['NA'],
     'delete' : ['NA'],
     'start'  : ['NA'],
+    'app'    : ['NA'],
     'db'     : ['sqlite', 'mysql'],
     'auth'   : ['basic' , 'github', 'twitter'],
     'docker' : ['add'   , 'remove'],
@@ -37,6 +38,8 @@ def parse_input( sys_argv ):
         print( 'Usage: runner.py COMMAND Argument' )
         print( '  > COMMAND create: create a new project' )
         print( '  > COMMAND delete: delete the generated project' )
+        print( '  > COMMAND app: add a new app' )        
+        print( '    "python runner.py app home" -> create a new application <HOME>' )
         print( '  > COMMAND db: set up SQLite or MySql' )
         print( '    "python runner.py db sqlite" -> activates SQLite persistence' )
         print( '    "python runner.py db mysql"  -> activates MySql persistence ' )
@@ -52,7 +55,7 @@ def parse_input( sys_argv ):
     COMMAND = input_argv[1].lower()
 
     if input_len > 2:
-        ARGUMENT = input_argv[1].lower()
+        ARGUMENT = input_argv[2].lower()
 
     if COMMAND not in ACTIONS.keys():
 
@@ -68,6 +71,15 @@ def parse_input( sys_argv ):
 
         project_start()
         exit(1)
+
+    if 'app' == COMMAND:
+
+        if not ARGUMENT:
+            print( 'ERR: Invalid argument. Expected app name' )
+            exit(1)            
+
+        project_create_app( ARGUMENT )
+        exit(1)        
 
     if 'delete' == COMMAND:
         
