@@ -63,8 +63,10 @@ def project_create_app( appName ):
 
     #print( 'Create app: ' + appName )
     
+    APP_DIR = os.path.join(DIR_SRC, appName )
+
     # Check app exists
-    if dir_exists( os.path.join(DIR_SRC, appName ) ):
+    if dir_exists( APP_DIR ):
         print('ERR: app already exists')
         exit(1)        
 
@@ -78,3 +80,17 @@ def project_create_app( appName ):
         exit(1)
 
     print('App [' + appName + '] created successfully')
+
+def project_delete_app( appName ):
+
+    #print( 'Create app: ' + appName )
+    
+    APP_DIR = os.path.join(DIR_SRC, appName )
+
+    # Check app exists
+    if not dir_exists( APP_DIR ):
+        print('ERR: app not defined: ' + appName)
+        exit(1)
+
+    dir_delete( APP_DIR )
+    print('App [' + appName + '] deleted successfully')

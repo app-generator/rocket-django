@@ -82,7 +82,11 @@ def parse_input( sys_argv ):
         exit(1)        
 
     if 'delete' == COMMAND:
-        
+
+        # delete app    
+        if ARGUMENT:
+            return project_delete_app( ARGUMENT )
+
         print('Delete SRC directory')
         dir_delete( DIR_SRC )
         print(' ...done')
