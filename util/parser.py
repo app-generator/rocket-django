@@ -469,3 +469,45 @@ def settings_section_update( section, var_value ):
 
     # Exit point 
     return retcode, section_content
+
+# Add a new app in the INSTALLED_APPS
+def settings_apps_add( appName ):
+
+    # Check app exists
+    APP_DIR = os.path.join(DIR_SRC, appName )
+
+    # Check app exists
+    if not dir_exists( APP_DIR ):
+        print('ERR: app not defined: ' + appName)
+        return COMMON.NOT_FOUND, None
+
+    # load INSTALLED_APPS
+    retcode, section_content = settings_section_get('INSTALLED_APPS')
+
+    if COMMON.OK != retcode:
+
+        print('Err loading INSTALLED_APPS section')
+        return retcode, None
+
+    # Processing (LIST) type 
+    section_content 
+    section_content_str = '' 
+    
+    for line in section_content:
+        
+        # insert new app at the end
+        if ']' in line:
+            section_content_str += "    '" + appName + "'," + os.linesep
+
+        section_content_str += line + os.linesep   
+
+    retcode, section_content = settings_section_update('INSTALLED_APPS', section_content_str)
+
+    # Exit
+    if COMMON.OK == retcode:
+        print( 'Section updated successfully' )
+    else:
+        print( 'Error updating section' )
+
+    # Exit point 
+    return retcode, section_content
