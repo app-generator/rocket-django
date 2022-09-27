@@ -2,7 +2,7 @@
 
 Open-source **Django Generator and app customizer**. The project is basically an interface over the `AppSeed Service` with a few local codebase processing currently unsupported by the LIVE [App Generator](https://appseed.us/). 
 
-> Status: `UNSTABLE`, under development
+> **STATUS**: `Under Development`
 
 <br />
 
