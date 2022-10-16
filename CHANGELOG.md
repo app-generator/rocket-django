@@ -4,8 +4,11 @@
 ### Improvements
 
 - Improve settings parser:
-  - sections print, replace, extract
-  - extract imports
+  - Sections print, replace, extract
+  - Extract imports
+  - List installed apps
+- Generator
+  - `create app` update also the settings 
 
 ## [0.0.3] 2022-09-25
 ### Improvements
