@@ -34,6 +34,15 @@ $ cd rocket-django
 
 <br />
 
+> IMPORTANT: The following packages should be globally accessible:
+
+- `Django` 
+- `Black` (code formatter) 
+
+The reason for this limitation is the runtime execution of `subprocess.run()` command that is not using the `VENV` while executing. 
+
+<br />
+
 > 👉 Install modules via `VENV`  
 
 ```bash
