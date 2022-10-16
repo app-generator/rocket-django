@@ -5,45 +5,7 @@ Copyright (c) 2019 - present AppSeed.us
 
 from .common  import *
 from .helpers import *
-
-def h_var_typology( content ):
-    
-    if not content:
-        return COMMON.CFG_VAR_NA
-
-    if '=' in content and '[' in content:
-        return COMMON.CFG_VAR_LIST    
-
-    if '=' in content and '{' in content:
-        return COMMON.CFG_VAR_DICT  
-
-    if '=' in content and not '[' in content and not '}' in content:
-        return COMMON.CFG_VAR_SIMPLE
-
-    # Default is unknown
-    return COMMON.CFG_VAR_NA        
-
-def h_extract_sections( content ):
-
-    file_imports  = []
-    file_sections = []
-
-    for line in content:
-
-        #print('> line: ' + line)
-
-        # import here    
-        if 'from ' in line or 'import ' in line:
-            file_imports.append ( h_del_lsep( line ) ) # strip line separators
-
-        # main sections here
-        if '=' in line:
-            file_sections.append( line.split('=')[0].strip() )
-
-    print("Imports  : " + str( file_imports  ) )       
-    print("Sections : " + str( file_sections ) ) 
-
-    return file_sections
+from .cli     import *
 
 def settings_load( ):
 
@@ -97,6 +59,71 @@ def settings_save( content ):
 
     return retcode
 
+def settings_format( ):
+
+    retcode = COMMON.OK
+
+    try:    
+
+        if not ( file_exists( FILE_DJ_SETTINGS ) ):
+            print( 'Err locate project settings' )
+            retcode = COMMON.ERR
+
+        os.chdir( DIR_DJ_CORE )
+
+        # Migrate db
+        result, stdout, stderr = exec_cmd( 'black settings.py' )
+
+        if COMMON.OK != result:
+            print('Err formating settings: ' + stderr)
+            exit(1)   
+
+    except Exception as e:
+
+        print('Err formating exeption: ' + str(e) )
+        retcode = COMMON.ERR
+
+    return retcode
+
+def h_var_typology( content ):
+    
+    if not content:
+        return COMMON.CFG_VAR_NA
+
+    if '=' in content and '[' in content:
+        return COMMON.CFG_VAR_LIST    
+
+    if '=' in content and '{' in content:
+        return COMMON.CFG_VAR_DICT  
+
+    if '=' in content and not '[' in content and not '}' in content:
+        return COMMON.CFG_VAR_SIMPLE
+
+    # Default is unknown
+    return COMMON.CFG_VAR_NA        
+
+def h_extract_sections( content ):
+
+    file_imports  = []
+    file_sections = []
+
+    for line in content:
+
+        #print('> line: ' + line)
+
+        # import here    
+        if 'from ' in line or 'import ' in line:
+            file_imports.append ( h_del_lsep( line ) ) # strip line separators
+
+        # main sections here
+        if '=' in line:
+            file_sections.append( line.split('=')[0].strip() )
+
+    print("Imports  : " + str( file_imports  ) )       
+    print("Sections : " + str( file_sections ) ) 
+
+    return file_sections
+
 def settings_imports():
 
     retcode = COMMON.OK
@@ -136,41 +163,6 @@ def settings_sections():
             sections.append( line.split('=')[0].strip() )
 
     return retcode, sections
-
-# Remove double empty lines
-def settings_format():
-
-    retcode, content = settings_load()
-
-    if COMMON.OK != retcode:
-
-        print('Err loading settings file')
-        return retcode
-
-    new_content = []
-    prev_line   = 'NA'
-    
-    for line in content:
-
-        # remove line sep 
-        line_copy = h_del_lsep( line ).replace(' ', '')
-
-        # detect empty lines
-        if line_copy == '':
-
-            # the previous line was also empty, ignore it
-            if line_copy != prev_line:
-
-                prev_line = ''
-                new_content.append( line )
-
-        # non-empty line, save it    
-        else:
-            prev_line = line 
-            new_content.append( line )
-
-    # Update the new content
-    settings_save( new_content )
 
 def settings_var_upd( var_name, var_value):
 
