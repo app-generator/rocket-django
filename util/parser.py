@@ -45,7 +45,7 @@ def settings_save( content ):
 
     try:
         
-        raw_content = '' #'# Note: processed_content ' + os.linesep
+        raw_content = ''
         
         for line in content:
         
@@ -71,7 +71,7 @@ def settings_format( ):
 
         os.chdir( DIR_DJ_CORE )
 
-        # Migrate db
+        # Apply 'Black' sules over the file
         result, stdout, stderr = exec_cmd( 'black settings.py' )
 
         if COMMON.OK != result:
@@ -462,6 +462,40 @@ def settings_section_update( section, var_value ):
     # Exit point 
     return retcode, section_content
 
+def settings_apps_list():
+
+    retcode = COMMON.OK
+    apps    = []
+
+    # load INSTALLED_APPS
+    retcode, section_content = settings_section_get('INSTALLED_APPS')
+
+    if COMMON.OK != retcode:
+
+        print('Err loading INSTALLED_APPS section')
+        return retcode, None
+
+    tmp = ''
+    
+    # list to str
+    for x in section_content:
+        tmp += x.strip(' ') 
+
+    # cleanUP
+    tmp = tmp.replace(' ', '')
+    tmp = tmp.replace('=', '')
+    tmp = tmp.replace('INSTALLED_APPS', '')
+    tmp = tmp.replace('[', '')
+    tmp = tmp.replace(']', '')
+
+    tmp_list = tmp.split( "','" )
+    for x in tmp_list:
+        x = x.replace("'", '')
+        x = x.replace(",", '')
+        apps.append( x )
+
+    return retcode, apps    
+
 # Add a new app in the INSTALLED_APPS
 def settings_apps_add( appName ):
 
@@ -472,6 +506,18 @@ def settings_apps_add( appName ):
     if not dir_exists( APP_DIR ):
         print('ERR: app not defined: ' + appName)
         return COMMON.NOT_FOUND, None
+
+    # check for duplicates
+    retcode, apps = settings_apps_list()
+
+    if COMMON.OK != retcode:
+
+        print('Err scanning current APPS')
+        return retcode, None
+
+    if appName in apps:
+        print('App [' + appName + '] already defined')
+        return retcode, None 
 
     # load INSTALLED_APPS
     retcode, section_content = settings_section_get('INSTALLED_APPS')

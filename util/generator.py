@@ -8,12 +8,13 @@ import sys
 from .common  import *
 from .helpers import *
 from .cli     import *
+from .parser  import *
 
 def project_create():
 
     if file_exists( FILE_DJ_MANAGE ):
         print('ERR: project exists, please delete first (runner.py delete)' )
-        exit(1)  
+        sys.exit(1)  
 
     if not dir_exists( 'src' ):
         dir_create( 'src' )
@@ -28,20 +29,20 @@ def project_create():
 
     if COMMON.OK != result:
         print('ERR: creating project: ' + stderr)
-        exit(1)
+        sys.exit(1)
 
     # Migrate db
     result, stdout, stderr = exec_cmd( 'python manage.py migrate' )
 
     if COMMON.OK != result:
         print('ERR: migrate DB: ' + stderr)
-        exit(1)        
+        sys.exit(1)        
  
 def project_start():
 
     if not file_exists( FILE_DJ_MANAGE ):
         print(' Err: project not created, (execute runner.py create)')
-        exit(1)        
+        sys.exit(1)        
 
     os.chdir( DIR_SRC )
 
@@ -50,14 +51,14 @@ def project_start():
 
     if COMMON.OK != result:
         print('ERR: migrate DB: ' + stderr)
-        exit(1)        
+        sys.exit(1)        
 
     # Start project
     result, stdout, stderr = exec_cmd( 'python manage.py runserver ' )
 
     if COMMON.OK != result:
         print('ERR: start the project: ' + stderr)
-        exit(1)
+        sys.exit(1)
 
 def project_create_app( appName ):
 
@@ -68,7 +69,7 @@ def project_create_app( appName ):
     # Check app exists
     if dir_exists( APP_DIR ):
         print('ERR: app already exists')
-        exit(1)        
+        sys.exit(1)        
 
     os.chdir( DIR_SRC )
 
@@ -77,7 +78,14 @@ def project_create_app( appName ):
 
     if COMMON.OK != result:
         print('ERR: creating app: ' + stderr)
-        exit(1)
+        sys.exit(1)
+
+    # Update settings
+    retcode, section_content = settings_apps_add( appName )
+
+    if COMMON.OK != result:
+        print('ERR updating configuration ')
+        sys.exit(1) 
 
     print('App [' + appName + '] created successfully')
 
@@ -90,7 +98,7 @@ def project_delete_app( appName ):
     # Check app exists
     if not dir_exists( APP_DIR ):
         print('ERR: app not defined: ' + appName)
-        exit(1)
+        sys.exit(1)
 
     dir_delete( APP_DIR )
     print('App [' + appName + '] deleted successfully')
