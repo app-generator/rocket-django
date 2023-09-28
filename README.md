@@ -46,7 +46,7 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
 | ✓ Support via GitHub Issues           | ✅ Lifetime Updates                  | -                                     |
 | -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
 | -                                     | ✅ Deployment Assistance             | -                                     |
-| --------------------------------------| --------------------------------------| --------------------------------------|
+| ------------------------------------| ------------------------------------| ------------------------------------|
 | -                                       | 🛒 `PRE Order`: **[$299](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD)         | 🛒 `Order`: **[$2999](https://appseed.gumroad.com/l/rocket-django-custom)** (via GUMROAD)              |   
 
 ## Features
