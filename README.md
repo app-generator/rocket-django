@@ -29,7 +29,7 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
 
  ----
 
-## Free vs. PRO 
+## Free vs. `PRO`
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
