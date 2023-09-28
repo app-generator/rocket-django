@@ -37,13 +37,14 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ Django 4.2.x                        | **Everything in Free**, plus:         | **Everything in PRO**, plus:         |
 | ✓ Best Practices                      | ✅ OAuth Google, Twitter, GH         | ✅ **1mo Custom Development**        | 
-| ✓ Extended User Model                 | ✅ Teams (Multitenancy)              | ✅ **Dedicated Developer**           |
-| ✓ Celery                              | ✅ Multi-Language Support            | ✅ Weekly Sprints                    |
-| ✓ Charts                              | ✅ Sentry Error Reporting            | ✅ Technical SPECS                   |
-| ✓ Docker                              | ✅ Private REPO Access               | ✅ Documentation                     |
-| ✓ API Generator                       | ✅ **Unlimited Projects**            | ✅ **30 days Delivery Warranty**     |
-| ✓ Stripe Payments                     | ✅ Lifetime Updates                  | -                                     |
-| ✓ Support via GitHub Issues           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)  | -     |
+| ✓ Extended User Model                 | ✅ Teams (Multi Tenancy)             | ✅ **Dedicated Developer**           |
+| ✓ Celery                              | ✅ Wagtail CMS                       | ✅ Weekly Sprints                    |
+| ✓ Charts                              | ✅ Multi-Language Support            | ✅ Technical SPECS                   |
+| ✓ Docker                              | ✅ Sentry Error Reporting            | ✅ Documentation                     |
+| ✓ API Generator                       | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
+| ✓ Stripe Payments                     | ✅ **Unlimited Projects**            | -                                     |
+| ✓ Support via GitHub Issues           | ✅ Lifetime Updates                  | -                                     |
+| -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
 | -                                     | ✅ Deployment Assistance             | -                                     |
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | -                                       | 🛒 `PRE Order`: **[$299](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD)         | 🛒 `Order`: **[$2999](https://appseed.gumroad.com/l/rocket-django-custom)** (via GUMROAD)              |   
