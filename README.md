@@ -29,7 +29,7 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
 
  ----
 
-## Free vs. PRO 
+## Free vs. `PRO`
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
@@ -41,7 +41,7 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
 | ✓ Celery                              | ✅ Wagtail CMS                       | ✅ Weekly Sprints                    |
 | ✓ Charts                              | ✅ Multi-Language Support            | ✅ Technical SPECS                   |
 | ✓ Docker                              | ✅ Sentry Error Reporting            | ✅ Documentation                     |
-| ✓ API Generator                       | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
+| ✓ [API Generator](https://github.com/app-generator/django-api-generator)      | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
 | ✓ Stripe Payments                     | ✅ **Unlimited Projects**            | -                                     |
 | ✓ Support via GitHub Issues           | ✅ Lifetime Updates                  | -                                     |
 | -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
