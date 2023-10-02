@@ -37,7 +37,7 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ Django 4.2.x                        | **Everything in Free**, plus:         | **Everything in PRO**, plus:         |
 | ✓ Best Practices                      | ✅ OAuth Google, Twitter, GH         | ✅ **1mo Custom Development**        | 
-| ✓ Extended User Model                 | ✅ Teams (Multi Tenancy)             | ✅ **Dedicated Developer**           |
+| ✓ Extended User Model                 | ✅ Multi Tenancy                     | ✅ **Dedicated Developer**           |
 | ✓ Celery                              | ✅ Wagtail CMS                       | ✅ Weekly Sprints                    |
 | ✓ Charts                              | ✅ Multi-Language Support            | ✅ Technical SPECS                   |
 | ✓ Docker                              | ✅ Sentry Error Reporting            | ✅ Documentation                     |
