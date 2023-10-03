@@ -1,9 +1,9 @@
 <div align="center">
-    <a href="https://github.com/app-generator/rocket-django">
+    <a href="https://rocket-django.onrender.com">
         <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/51070104/272178364-cbac6d97-b2dc-4d95-bab6-891f4ee7d84d.png"" width="64" height="64" alt="Rocket Icon">
     </a>
     <h1>
-        <a href="https://github.com/app-generator/rocket-django">
+        <a href="https://rocket-django.onrender.com">
             Rocket Django
         </a>
     </h1>
@@ -15,7 +15,7 @@
 <br />
 
 <div align="center">
-    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/51070104/272187437-19b38cd4-f84f-451b-943a-e3f441d0e5d5.jpg" alt="Django Rocket - Open-source Starter styled with Tailwind and Flowbite.">
+    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/51070104/272299949-6f4a8fd7-7cce-472a-9566-9519db338c7d.gif" alt="Django Rocket - Open-source Starter styled with Tailwind and Flowbite.">
 </div>
 
 <br />
