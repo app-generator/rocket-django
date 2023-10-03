@@ -1,5 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import render, redirect
 
-# HOMEpage
+from .models import *
+
 def index(request):
-    return HttpResponse('Hello from <a target="_blank" href="https://github.com/app-generator/rocket-django">Rocket Django</a>')
+
+  context = {}
+  return render(request, "index.html", context)
+
