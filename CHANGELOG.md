@@ -1,6 +1,6 @@
 # Change Log
 
-## [0.0.3] 2023-10-02 
+## [0.0.3] 2023-10-03
 ### Changes
 
 - Update DOCS (README) 
