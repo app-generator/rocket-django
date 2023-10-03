@@ -105,7 +105,7 @@ Visit the app in the browser `localhost:5085`.
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ Django 4.2.x                        | **Everything in Free**, plus:         | **Everything in PRO**, plus:         |
 | ✓ Best Practices                      | ✅ `OAuth` Google, GitHub             | ✅ **1mo Custom Development**        | 
-| ✓ UI: **TailwindCSS**/`Flowbite`      | ✅ **Stripe** Payments                | ✅ **Dedicated Developer**           |
+| ✓ **TailwindCSS**/`Flowbite`          | ✅ **Stripe** Payments                | ✅ **Dedicated Developer**           |
 | ✓ Extended User Model                 | ✅ **Wagtail** CMS                    | ✅ Weekly Sprints                    |
 | ✓ Celery                              | ✅ Multi-Language Support             | ✅ Technical SPECS                   |
 | ✓ Charts                              | ✅ **Sentry** Error Reporting         | ✅ Documentation                     |
