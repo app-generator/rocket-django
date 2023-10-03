@@ -7,6 +7,9 @@
             Rocket Django
         </a>
     </h1>
+    <p>
+        <strong>TailwindCSS</strong> &bull; <strong>Flowbite</strong> &bull; <strong>API Generator</strong> &bull; <strong>Celery</strong> &bull; <strong>Charts</strong> &bull; <strong>Docker</strong> &bull; <strong>CI/CD</strong>
+    </p>    
 </div>
 
 <div align="center">
