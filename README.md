@@ -104,14 +104,14 @@ Visit the app in the browser `localhost:5085`.
 | Free Version                            | PRO - $499 (plus VAT)               | 🚀 Custom - $2999 (plus VAT)         |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ Django 4.2.x                        | **Everything in Free**, plus:         | **Everything in PRO**, plus:         |
-| ✓ Best Practices                      | ✅ `OAuth` Google, Twitter, GitHub     | ✅ **1mo Custom Development**        | 
-| ✓ Extended User Model                 | ✅ **Stripe** Payments                   | ✅ **Dedicated Developer**           |
-| ✓ Celery                              | ✅ **Wagtail** CMS                       | ✅ Weekly Sprints                    |
-| ✓ Charts                              | ✅ Multi-Language Support            | ✅ Technical SPECS                   |
-| ✓ Docker                              | ✅ **Sentry** Error Reporting            | ✅ Documentation                     |
-| ✓ [API Generator](https://github.com/app-generator/django-api-generator)      | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
-| ✓ CI/CD Flow via Render               | ✅ **Unlimited Projects**            | -                                     |
-| ✓ Support via GitHub Issues           | ✅ Lifetime Updates                  | -                                     |
+| ✓ Best Practices                      | ✅ `OAuth` Google, GitHub             | ✅ **1mo Custom Development**        | 
+| ✓ Extended User Model                 | ✅ **Stripe** Payments                | ✅ **Dedicated Developer**           |
+| ✓ Celery                              | ✅ **Wagtail** CMS                    | ✅ Weekly Sprints                    |
+| ✓ Charts                              | ✅ Multi-Language Support             | ✅ Technical SPECS                   |
+| ✓ Docker                              | ✅ **Sentry** Error Reporting         | ✅ Documentation                     |
+| ✓ [API Generator](https://github.com/app-generator/django-api-generator)       | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
+| ✓ CI/CD Flow via Render               | ✅ **Unlimited Projects**             | -                                     |
+| ✓ Support via GitHub Issues           | ✅ Lifetime Updates                   | -                                     |
 | -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
 | -                                     | ✅ Deployment Assistance             | -                                     |
 | ------------------------------------| ------------------------------------| ------------------------------------|
