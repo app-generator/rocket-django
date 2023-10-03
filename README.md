@@ -12,6 +12,8 @@
     </p>    
 </div>
 
+<br />
+
 <div align="center">
     <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/51070104/272187437-19b38cd4-f84f-451b-943a-e3f441d0e5d5.jpg" alt="Django Rocket - Open-source Starter styled with Tailwind and Flowbite.">
 </div>
