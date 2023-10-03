@@ -111,8 +111,8 @@ Visit the app in the browser `localhost:5085`.
 | ✓ Docker                              | ✅ Sentry Error Reporting            | ✅ Documentation                     |
 | ✓ [API Generator](https://github.com/app-generator/django-api-generator)      | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
 | ✓ Stripe Payments                     | ✅ **Unlimited Projects**            | -                                     |
-| ✓ Support via GitHub Issues           | ✅ Lifetime Updates                  | -                                     |
-| -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
+| ✓ CI/CD Flow via Render               | ✅ Lifetime Updates                  | -                                     |
+| ✓ Support via GitHub Issues           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
 | -                                     | ✅ Deployment Assistance             | -                                     |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | -                                       | 🛒 `PRE Order`: **[$299](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD)         | 🛒 `Order`: **[$2999](https://appseed.gumroad.com/l/rocket-django-custom)** (via GUMROAD)              |   
