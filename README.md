@@ -105,14 +105,14 @@ Visit the app in the browser `localhost:5085`.
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ Django 4.2.x                        | **Everything in Free**, plus:         | **Everything in PRO**, plus:         |
 | ✓ Best Practices                      | ✅ `OAuth` Google, GitHub             | ✅ **1mo Custom Development**        | 
-| ✓ Extended User Model                 | ✅ **Stripe** Payments                | ✅ **Dedicated Developer**           |
-| ✓ Celery                              | ✅ **Wagtail** CMS                    | ✅ Weekly Sprints                    |
-| ✓ Charts                              | ✅ Multi-Language Support             | ✅ Technical SPECS                   |
-| ✓ Docker                              | ✅ **Sentry** Error Reporting         | ✅ Documentation                     |
-| ✓ [API Generator](https://github.com/app-generator/django-api-generator)       | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
-| ✓ CI/CD Flow via Render               | ✅ **Unlimited Projects**             | -                                     |
-| ✓ Support via GitHub Issues           | ✅ Lifetime Updates                   | -                                     |
-| -                                     | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
+| ✓ UI: **TailwindCSS**/`Flowbite`      | ✅ **Stripe** Payments                | ✅ **Dedicated Developer**           |
+| ✓ Extended User Model                 | ✅ **Wagtail** CMS                    | ✅ Weekly Sprints                    |
+| ✓ Celery                              | ✅ Multi-Language Support             | ✅ Technical SPECS                   |
+| ✓ Charts                              | ✅ **Sentry** Error Reporting         | ✅ Documentation                     |
+| ✓ Docker                              | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
+| ✓ [API Generator](https://github.com/app-generator/django-api-generator)                | ✅ **Unlimited Projects**             | -                                     |
+| ✓ CI/CD Flow via Render               | ✅ Lifetime Updates                   | -                                     |
+| ✓ Support via GitHub Issues           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
 | -                                     | ✅ Deployment Assistance             | -                                     |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | -                                       | 🛒 `PRE Order`: **[$299](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD)         | 🛒 `Order`: **[$2999](https://appseed.gumroad.com/l/rocket-django-custom)** (via GUMROAD)              |   
