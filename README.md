@@ -21,20 +21,19 @@
 
 Login users, process payments and send emails at lightspeed. Spend your time building your startup, not integrating APIs. **Rocket Django** provides you with the boilerplate code you need to launch, FAST. 
 
-<br />
-
 #### ***Rocket your startup in days, not weeks*** 
 
 The Django boilerplate with all you need to build your SaaS, AI tool, or any other web app. From idea to production in 5 minutes.
 
-**48+ hours of headaches =**
+#### **48+ hours of headaches**
+
  - 1 hrs to setup the project 
  - 2 hrs integrate tooling
  - 2 hrs to handle Stripe
  - 1 hrs for Docker
  - 1 hr Google Oauth
  - ∞ hrs overthinking...
- - Quality [Support](https://appseed.us/support/)  
+ - Quality [Support](https://appseed.us/support/) via `Email` & [Discord](https://discord.gg/fZC6hup) 
 
 <br />
 
@@ -127,4 +126,4 @@ Visit the app in the browser `localhost:5085`.
 <br />
 
 ---
-Rocket Django - Open-source starter provided by **[AppSeed](https://appseed.us)**.
+[Rocket Django](https://github.com/app-generator/rocket-django) - Open-source starter styled with Tailwind/Flowbite actively suported by **[AppSeed](https://appseed.us)**.
