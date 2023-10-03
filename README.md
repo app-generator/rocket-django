@@ -119,6 +119,21 @@ Visit the app in the browser `localhost:5085`.
 
 <br />
 
+## **Deploy on Render**
+
+- Create a Blueprint instance
+  - Go to https://dashboard.render.com/blueprints this link.
+- Click `New Blueprint Instance` button.
+- Connect your `repo` which you want to deploy.
+- Fill the `Service Group Name` and click on the `Update Existing Resources` button.
+- Edit the Environment and [specify the PYTHON_VERSION](https://render.com/docs/python-version)
+  - Version `3.11.5` was used for **[this deployment](https://rocket-django.onrender.com/)**
+- After that, your deployment will start automatically.
+
+At this point, the product should be LIVE.
+
+<br />
+
 ## License
 
 @MIT
