@@ -13,9 +13,41 @@
     <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/51070104/272187437-19b38cd4-f84f-451b-943a-e3f441d0e5d5.jpg" alt="Django Rocket - Open-source Starter styled with Tailwind and Flowbite.">
 </div>
 
+<br />
+
+## Why Rocket Django
+
+#### ***Supercharge your app instantly, launch faster, make $***
+
+Login users, process payments and send emails at lightspeed. Spend your time building your startup, not integrating APIs. **Rocket Django** provides you with the boilerplate code you need to launch, FAST. 
+
+<br />
+
+#### ***Rocket your startup in days, not weeks*** 
+
+The Django boilerplate with all you need to build your SaaS, AI tool, or any other web app. From idea to production in 5 minutes.
+
+**48+ hours of headaches =**
+ - 1 hrs to setup the project 
+ - 2 hrs integrate tooling
+ - 2 hrs to handle Stripe
+ - 1 hrs for Docker
+ - 1 hr Google Oauth
+ - ∞ hrs overthinking...
+ - Quality [Support](https://appseed.us/support/)  
+
+<br />
+
 ## Manual Build 
 
-> Install modules via `VENV`  
+> Download code
+
+```bash
+$ git clone https://github.com/app-generator/rocket-django.git
+$ cd rocket-django
+```
+ 
+> Install **Django** modules via `VENV`  
 
 ```bash
 $ virtualenv env
@@ -23,7 +55,7 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-> Install Tailwind (separate terminal)
+> Install **Tailwind/Flowbite** (separate terminal)
 
 ```bash
 $ cd static
@@ -47,23 +79,22 @@ $ python manage.py runserver       # start the project
 
 <br />
 
-## Why Rocket Django
+## Start With Docker
 
-#### ***Supercharge your app instantly, launch faster, make $***
-Login users, process payments and send emails at lightspeed. Spend your time building your startup, not integrating APIs. Rocket provides you with the boilerplate code you need to launch, FAST. <br />
+> Download code
 
-#### ***Rocket your startup in days, not weeks*** 
-The Django boilerplate with all you need to build your SaaS, AI tool, or any other web app. From idea to production in 5 minutes.
+```bash
+$ git clone https://github.com/app-generator/rocket-django.git
+$ cd rocket-django
+```
 
-**18+ hours of headaches =**
- - 4 hrs to set up emails
- - 3 hrs designing a pricing section
- - 2 hrs to handle Stripe webhooks
- - 4 hrs for SEO tags
- - 1 hr applying for Google Oauth
- - 2 hrs for DNS records
- - 2 hrs for protected API routes
- - ∞ hrs overthinking...
+> Start with Docker Compose
+
+```bash
+$ docker-compose up --build 
+``` 
+
+Visit the app in the browser `localhost:5085`.
 
 <br />
 
@@ -89,27 +120,9 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
 
 <br />
 
-## Features
+## License
 
-**ToDO**
-
-<br />
-
-## Modules
-
-**ToDO**
-
-<br />
-
-## App Structure
-
-**ToDO**
-
-<br />
-
-## Getting Started
-
-ToDo
+@MIT
 
 <br />
 
