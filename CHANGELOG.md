@@ -1,5 +1,17 @@
 # Change Log
 
+## [0.0.6] 2023-10-06
+### Changes
+
+- Update Features
+  - Added DataTables (FREE Version)
+- Added Apps
+  - API
+  - Charts
+  - Tasks/Celery
+  - DataTables
+  - Users
+
 ## [0.0.5] 2023-10-03
 ### Changes
 
