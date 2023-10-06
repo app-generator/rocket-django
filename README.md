@@ -8,7 +8,7 @@
         </a>
     </h1>
     <p>
-        <strong>TailwindCSS</strong> &bull; <strong>Flowbite</strong> &bull; <strong>API Generator</strong> &bull; <strong>Celery</strong> &bull; <strong>Charts</strong> &bull; <strong>Docker</strong> &bull; <strong>CI/CD</strong>
+        <strong>TailwindCSS</strong> &bull; <strong>Flowbite</strong> &bull; <strong>API Generator</strong> &bull; <strong>Celery</strong> &bull; <strong>DataTables</strong> &bull; <strong>Charts</strong> &bull; <strong>Docker</strong> &bull; <strong>CI/CD</strong>
     </p>    
 </div>
 
@@ -108,17 +108,17 @@ Visit the app in the browser `localhost:5085`.
 
 | Free Version                            | PRO - $499 (plus VAT)               | 🚀 Custom - $2999 (plus VAT)         |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
-| ✓ Django 4.2.x                        | **Everything in Free**, plus:         | **Everything in PRO**, plus:         |
+| ✓ Django 4.2.x                        | **Everything in Free**, plus:         | **Everything in PRO**, plus:          |
 | ✓ Best Practices                      | ✅ `OAuth` Google, GitHub             | ✅ **1mo Custom Development**        | 
 | ✓ **TailwindCSS**/`Flowbite`          | ✅ **Stripe** Payments                | ✅ **Dedicated Developer**           |
 | ✓ Extended User Model                 | ✅ **Wagtail** CMS                    | ✅ Weekly Sprints                    |
-| ✓ Celery                              | ✅ Multi-Language Support             | ✅ Technical SPECS                   |
-| ✓ Charts                              | ✅ **Sentry** Error Reporting         | ✅ Documentation                     |
-| ✓ Docker                              | ✅ Private REPO Access               | ✅ **30 days Delivery Warranty**     |
-| ✓ [API Generator](https://github.com/app-generator/django-api-generator)                | ✅ **Unlimited Projects**             | -                                     |
-| ✓ CI/CD Flow via Render               | ✅ Lifetime Updates                   | -                                     |
-| ✓ Support via GitHub Issues           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
-| -                                     | ✅ Deployment Assistance             | -                                     |
+| ✓ Charts                              | ✅ Multi-Language Support             | ✅ Technical SPECS                   |
+| ✓ DataTables                          | ✅ **Sentry** Error Reporting         | ✅ Documentation                     |
+| ✓ `API` via DRF                       | ✅ Private REPO Access                | ✅ **30 days Delivery Warranty**     |
+| ✓ Celery                              | ✅ **Unlimited Projects**             | -                                    |
+| ✓ Docker                              | ✅ Lifetime Updates                   | -                                    |
+| ✓ CI/CD Flow via Render               | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
+| ✓ Support via GitHub Issues           | ✅ Deployment Assistance              | -                                    |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | -                                       | 🛒 `PRE Order`: **[$299](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD)         | 🛒 `Order`: **[$2999](https://appseed.gumroad.com/l/rocket-django-custom)** (via GUMROAD)              |   
 
@@ -139,6 +139,51 @@ At this point, the product should be LIVE.
 
 <br />
 
+## Codebase 
+
+```bash
+< PROJECT ROOT >
+   |
+   |-- core/                 # Project Settings 
+   |    |-- settings.py 
+   |    |-- wsgi.py     
+   |    |-- urls.py     
+   |
+   |-- home/                 # Presentation app 
+   |    |-- views.py         # serve the HOMEpage  
+   |    |-- urls.py     
+   |    |-- models.py
+   |
+   |-- apps/                 # Utility Apps 
+   |    |-- common/          # defines models & helpers
+   |    |    |-- models.py   
+   |    |    |-- util.py 
+   |    |-- users            # Handles Authentication 
+   |    |-- api              # DRF managed API
+   |    |-- charts           # Showcase Different Charts
+   |    |-- tables           # Implements DataTables
+   |    |-- tasks            # Celery, async processing
+   |
+   |-- templates/            # UI templates 
+   |-- static/               # Tailwind/Flowbite 
+   |    |-- src/             # 
+   |         |-- input.css   # CSS Styling
+   |
+   |-- Dockerfile            # Docker
+   |-- docker-compose.yml    # Docker 
+   |
+   |-- render.yml            # CI/CD for Render
+   |-- build.sh              # CI/CD for Render 
+   |
+   |-- manage.py             # Django Entry-Point
+   |-- requirements.txt      # dependencies
+   |-- .env                  # ENV File
+   |
+   |-- *************************************************      
+```   
+
+<br />
+
 ## License
 
 @MIT
@@ -146,4 +191,4 @@ At this point, the product should be LIVE.
 <br />
 
 ---
-[Rocket Django](https://github.com/app-generator/rocket-django) - Open-source starter styled with Tailwind/Flowbite actively suported by **[AppSeed](https://appseed.us)**.
+[Rocket Django](https://github.com/app-generator/rocket-django) - Open-source starter styled with `Tailwind/Flowbite` actively suported by **[AppSeed](https://appseed.us)**.
