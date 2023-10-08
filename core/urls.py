@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path("", include("home.urls")),
@@ -26,3 +28,4 @@ urlpatterns = [
     path("tables/", include("apps.tables.urls")),
     path("tasks/", include("apps.tasks.urls")),
 ]
+urlpatterns += static(settings.CELERY_LOGS_URL, document_root=settings.CELERY_LOGS_DIR)
