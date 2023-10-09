@@ -15,3 +15,5 @@ env
 .env
 node_modules
 yarn.lock
+
+tasks_logs/

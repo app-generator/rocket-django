@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     "apps.charts", 
     "apps.tables",
     "apps.tasks",
+
+    "django_celery_results",
 ]
 
 MIDDLEWARE = [
@@ -144,3 +146,23 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+
+CELERY_SCRIPTS_DIR        = os.path.join(BASE_DIR, "tasks_scripts" )
+
+CELERY_LOGS_URL           = "/tasks_logs/"
+CELERY_LOGS_DIR           = os.path.join(BASE_DIR, "tasks_logs"    )
+
+CELERY_BROKER_URL         = os.environ.get("CELERY_BROKER", "redis://localhost:6379")
+CELERY_RESULT_BACKEND     = os.environ.get("CELERY_BROKER", "redis://localhost:6379")
+
+CELERY_TASK_TRACK_STARTED = True
+CELERY_TASK_TIME_LIMIT    = 30 * 60
+CELERY_CACHE_BACKEND      = "django-cache"
+CELERY_RESULT_BACKEND     = "django-db"
+CELERY_RESULT_EXTENDED    = True
+CELERY_RESULT_EXPIRES     = 60*60*24*30 # Results expire after 1 month
+CELERY_ACCEPT_CONTENT     = ["json"]
+CELERY_TASK_SERIALIZER    = 'json'
+CELERY_RESULT_SERIALIZER  = 'json'
