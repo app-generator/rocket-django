@@ -62,9 +62,8 @@ $ pip install -r requirements.txt
 > Install **Tailwind/Flowbite** (separate terminal)
 
 ```bash
-$ cd static
-$ yarn  
-$ npx tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch           
+$ npm install
+$ npm run dev        
 ```
 
 > Migrate DB
