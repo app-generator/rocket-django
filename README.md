@@ -51,6 +51,13 @@ $ git clone https://github.com/app-generator/rocket-django.git
 $ cd rocket-django
 ```
  
+> Install Node Modules 
+
+```
+$ npm i
+$ npm run build
+```
+
 > Install **Django** modules via `VENV`  
 
 ```bash
