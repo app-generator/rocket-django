@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.7] 2023-10-11
+### Changes
+
+- Integrate `Webpack`
+  - Improved assets management 
+
 ## [0.0.6] 2023-10-06
 ### Changes
 
