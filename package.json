@@ -1,0 +1,31 @@
+{
+  "name": "rocket-django",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r     <a href=\"https://rocket-django.onrender.com\">\r         <img src=\"https://github-production-user-asset-6210df.s3.amazonaws.com/51070104/272178364-cbac6d97-b2dc-4d95-bab6-891f4ee7d84d.png\"\" width=\"64\" height=\"64\" alt=\"Rocket Icon\">\r     </a>\r     <h1>\r         <a href=\"https://rocket-django.onrender.com\">\r             Rocket Django\r         </a>\r     </h1>\r     <p>\r         <strong>TailwindCSS</strong> &bull; <strong>Flowbite</strong> &bull; <strong>API Generator</strong> &bull; <strong>Celery</strong> &bull; <strong>DataTables</strong> &bull; <strong>Charts</strong> &bull; <strong>Docker</strong> &bull; <strong>CI/CD</strong>\r     </p>    \r </div>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "apexcharts": "^3.43.0",
+    "autoprefixer": "^10.4.16",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "flowbite": "^1.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss-loader": "^7.3.3",
+    "tailwindcss": "^3.3.3"
+  }
+}
