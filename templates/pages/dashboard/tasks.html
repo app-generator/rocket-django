@@ -1,19 +1,19 @@
-{% extends "base.html" %}
+{% extends "layouts/base.html" %}
 
 {% load formats file_extension info_value %}
 
 
 {% block content %}
-<main class="dark:bg-gray-800 dark:border-gray-700">
+<main>
   <div class="px-4 pt-6">
 
-  <div class="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 py-4">
+  <div class="container mx-auto max-w-full mx-auto">
 
     <!-- Info component -->
     <div class="flex flex-wrap ">
       <div class="w-full">
-        <div class="border mb-4 dark:bg-gray-800 dark:border-gray-600 rounded dark:text-white">
-          <div class="py-3 px-6 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900 pb-0 bg-gray-100 dark:bg-gray-700 dark:text-white px-4">
+        <div class="border mb-4 dark:bg-gray-800 dark:border-gray-600 rounded-lg dark:text-white">
+          <div class="py-3 rounded-t-lg px-3 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900 bg-gray-100 dark:bg-gray-700 dark:text-white px-4">
             <h6 class="">
               Async Tasks Manager
             </h6>
@@ -40,8 +40,8 @@
     <!-- Task Manager Component -->
     <div class="flex flex-wrap ">
       <div class="w-full">
-        <div class="border mb-4 dark:bg-gray-800 dark:border-gray-600 rounded">
-          <div class="py-3 dark:bg-gray-800 dark:text-white px-4">
+        <div class="border mb-4 dark:bg-gray-800 dark:border-gray-600 rounded-lg">
+          <div class="py-3 rounded-t-lg dark:bg-gray-800 dark:text-white px-4">
             <h6>Tasks List</h6>
           </div>
           <div class="flex-auto p-6 px-0 pt-0">
@@ -183,13 +183,13 @@
     <!-- Task Logs -->
     <div class="flex flex-wrap ">
       <div class="w-full">
-        <div class="border mb-4 dark:bg-gray-800 dark:border-gray-600 rounded">
-          <div class="py-3 dark:bg-gray-800 dark:text-white px-4">
+        <div class="border mb-4 dark:bg-gray-800 dark:border-gray-600 rounded-lg">
+          <div class="rounded-t-lg py-3 dark:bg-gray-800 dark:text-white px-4">
             <h6>
               LOGS
             </h6>
           </div>
-          <div class="flex-auto p-6 px-0 pt-0 pb-2">
+          <div class="flex-auto px-0 pt-0 pb-2">
             <div class="block w-full overflow-auto scrolling-touch p-0">
               <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-600">
                 <thead class="bg-gray-100 dark:bg-gray-700">
@@ -258,7 +258,7 @@
 
                     </tr>
 
-                    <div class="modal opacity-0" id="view-log-{{result.id}}" data-bs-backdrop="static" data-bs-keyboard="false"
+                    {% comment %} <div class="modal opacity-0" id="view-log-{{result.id}}" data-bs-backdrop="static" data-bs-keyboard="false"
                       tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
@@ -286,7 +286,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> {% endcomment %}
 
                   {% endfor %}
 

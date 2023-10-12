@@ -29,3 +29,4 @@ urlpatterns = [
     path("tasks/", include("apps.tasks.urls")),
 ]
 urlpatterns += static(settings.CELERY_LOGS_URL, document_root=settings.CELERY_LOGS_DIR)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% include "includes/head.html" %}
+  {% block extrastyle %}{% endblock extrastyle %}
+
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800">
+
+  {% block navigation %}
+    {% include "includes/navigation.html" %}
+  {% endblock navigation %}
+
+  <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
+
+    {% block sidebar %}
+      {% include "includes/sidebar.html" %}
+    {% endblock sidebar %}
+
+    <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90" id="sidebarBackdrop"></div>
+
+    <div id="main-content" class="relative w-full h-full overflow-y-auto bg-gray-50 lg:ml-64 dark:bg-gray-900">
+      {% block content %}{% endblock content %}
+      {% block footer %}
+        {% include "includes/footer.html" %}
+      {% endblock footer %}
+      <p class="my-10 text-sm text-center text-gray-500">
+        &copy; 2019-2023 <a href="https://flowbite.com/" class="hover:underline" target="_blank">Flowbite.com</a>. All
+        rights reserved.
+      </p>
+
+    </div>
+  </div>
+
+
+  {% include "includes/scripts.html" %}
+  {% block extra_js %}{% endblock extra_js %}
+
+</body>
+
+</html>
