@@ -11,8 +11,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# DB & Statics
+# Install modules 
+RUN npm run build
+RUN npm run build
+
+# Manage Assets & DB 
 RUN python manage.py collectstatic --no-input 
+RUN python manage.py makemigrations
 RUN python manage.py migrate
 
 # gunicorn
