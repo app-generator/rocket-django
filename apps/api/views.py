@@ -4,7 +4,7 @@ from rest_framework import viewsets
 from rest_framework import permissions
 
 
-class CustomProductPermission(permissions.BasePermission):
+class ProductPermission(permissions.BasePermission):
     def has_permission(self, request, view):
         if request.method == 'GET':
             return True
@@ -14,5 +14,5 @@ class CustomProductPermission(permissions.BasePermission):
 class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
-    permission_classes = (CustomProductPermission, )
+    permission_classes = (ProductPermission, )
     lookup_field = 'id'
