@@ -14,6 +14,11 @@
             <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
                 Sign in to platform 
             </h2>
+            <p>
+                <span>ADMIN: admin / Pass12__</span>
+                <br />
+                <span>USER: test / Pass12__</span>
+            </p>
             <form class="mt-8 space-y-6" method="post" action="#">
                 {% csrf_token %}
                 {% for field in form %}
@@ -24,7 +29,8 @@
                 {% endfor %}
                 <div class="flex items-start">
                     <div class="flex items-center h-5">
-                        <input id="remember" aria-describedby="remember" name="remember" type="checkbox" class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
+                        <input id="remember" aria-describedby="remember" name="remember" type="checkbox" 
+                               class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
                     </div>
                     <div class="ml-3 text-sm">
                     <label for="remember" class="font-medium text-gray-900 dark:text-white">Remember me</label>
