@@ -14,3 +14,5 @@ celery
 redis
 hiredis
 django-celery-results
+djangorestframework
+django-api-generator

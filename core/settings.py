@@ -54,6 +54,11 @@ INSTALLED_APPS = [
     "apps.tasks",
 
     "django_celery_results",
+
+    'django_api_gen',
+    'rest_framework',
+    'rest_framework.authtoken', 
+
 ]
 
 MIDDLEWARE = [
@@ -173,3 +178,21 @@ CELERY_RESULT_SERIALIZER  = 'json'
 
 LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+
+API_GENERATOR = {
+    'product' : "apps.common.models.Product",
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}
+
+# risky
+SESSION_COOKIE_HTTPONLY=False
