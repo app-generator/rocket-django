@@ -1,5 +1,5 @@
 # Core
-django==4.2.5
+django==4.2.6
 python-dotenv==1.0.0
 
 # Deployment
@@ -10,9 +10,12 @@ gunicorn==21.2.0
 # psycopg2-binary==3.1.12
 # mysqlclient==2.2.0
 
-celery
-redis
-hiredis
-django-celery-results
-djangorestframework
-django-api-generator
+celery==5.3.4
+redis==5.0.1
+hiredis==2.2.3
+
+django-celery-results==2.5.1
+djangorestframework==3.14.0
+django-api-generator==1.0.17
+
+Pillow==10.0.1
