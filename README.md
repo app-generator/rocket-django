@@ -114,19 +114,19 @@ Visit the app in the browser `localhost:5085`.
 
 | Free Version                            | PRO - $499 (plus VAT)               | 🚀 Custom - $2999 (plus VAT)         |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
-| ✓ Django 4.2.x                        | **Everything in Free**, plus:         | **Everything in PRO**, plus:          |
-| ✓ Best Practices                      | ✅ `OAuth` Google, GitHub             | ✅ **1mo Custom Development**        | 
-| ✓ **TailwindCSS**/`Flowbite`          | ✅ **Stripe** Payments                | ✅ **Dedicated Developer**           |
-| ✓ Extended User Model                 | ✅ **Wagtail** CMS                    | ✅ Weekly Sprints                    |
-| ✓ Charts                              | ✅ Multi-Language Support             | ✅ Technical SPECS                   |
-| ✓ DataTables                          | ✅ **Sentry** Error Reporting         | ✅ Documentation                     |
-| ✓ `API` via DRF                       | ✅ Private REPO Access                | ✅ **30 days Delivery Warranty**     |
-| ✓ Celery                              | ✅ **Unlimited Projects**             | -                                    |
-| ✓ Docker                              | ✅ Lifetime Updates                   | -                                    |
-| ✓ CI/CD Flow via Render               | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -      |
-| ✓ Support via GitHub Issues           | ✅ Deployment Assistance              | -                                    |
+| ✓ Django 4.2.x                                                    | **Everything in Free**, plus:                                       | **Everything in PRO**, plus:       |
+| ✓ Best Practices                                                  | ✅ `OAuth` Google, GitHub                                           | ✅ **1mo Custom Development**     | 
+| ✓ **TailwindCSS**/`Flowbite`                                      | ✅ **Stripe** Payments                                              | ✅ **Dedicated Developer**        |
+| ✓ Extended User Model                                             | ✅ **Wagtail** CMS                                                  | ✅ Weekly Sprints                 |
+| ✓ [Charts](https://rocket-django.onrender.com/charts/)            | ✅ Multi-Language Support                                           | ✅ Technical SPECS                |
+| ✓ [DataTables](https://rocket-django.onrender.com/tables/)        | ✅ **Sentry** Error Reporting                                       | ✅ Documentation                  |
+| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF | ✅ Private REPO Access                                              | ✅ **30 days Delivery Warranty**  |
+| ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)        | ✅ **Unlimited Projects**                                           | -                                  |
+| ✓ Docker                                                          | ✅ Lifetime Updates                                                 | -                                  |
+| ✓ CI/CD Flow via Render                                           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -                                  |
+| ✓ Support via GitHub Issues                                       | ✅ Deployment Assistance                                            | -                                  |
 | ------------------------------------| ------------------------------------| ------------------------------------|
-| -                                       | 🛒 `PRE Order`: **[$299](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD)         | 🛒 `Order`: **[$2999](https://appseed.gumroad.com/l/rocket-django-custom)** (via GUMROAD)              |   
+| -                                   | 🛒 `PRE Order`: **[$299](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD) | 🛒 `Order`: **[$2999](https://appseed.gumroad.com/l/rocket-django-custom)** (GUMROAD) |   
 
 <br />
 

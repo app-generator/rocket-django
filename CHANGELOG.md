@@ -1,5 +1,16 @@
 # Change Log
 
+## [0.0.8] 2023-10-14
+### Changes
+
+- Added AUTH
+  - [Sign IN](https://rocket-django.onrender.com/users/signin/), SignUP, Change Pass
+- API Via DRF
+  - [Products Model](https://rocket-django.onrender.com/api/product/)
+- DataTables 
+  - [Products Model](https://rocket-django.onrender.com/tables/)
+- [Sample Charts](https://rocket-django.onrender.com/charts/)
+ 
 ## [0.0.7] 2023-10-11
 ### Changes
 
