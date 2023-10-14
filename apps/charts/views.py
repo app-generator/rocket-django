@@ -4,4 +4,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return HttpResponse("INDEX Charts")
+    return render(request, 'pages/apps/charts.html')
