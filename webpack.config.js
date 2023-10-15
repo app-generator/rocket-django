@@ -4,7 +4,7 @@ const { SourceMapDevToolPlugin } = require("webpack");
 const path = require('path');
 
 module.exports = {
-    entry: './assets/index.js',  // path to our input file
+    entry: './static/assets/index.js',  // path to our input file
     output: {
         filename: '[name].bundle.js',  // output bundle file name
         path: path.resolve(__dirname, './static/dist'),  // path to our Django static directory
