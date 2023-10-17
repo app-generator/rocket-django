@@ -1,5 +1,16 @@
 # Change Log
 
+## [0.0.9] 2023-10-14
+### Changes
+
+- Profile Page Updates
+  - Added User IMG
+  - Change Password 
+- ADMIN (Superusers)
+  - Edt Users 
+- Products (DataTables)
+  - Added Edit/Delete/Create controls   
+
 ## [0.0.8] 2023-10-14
 ### Changes
 
