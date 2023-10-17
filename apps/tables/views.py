@@ -4,4 +4,8 @@ from django.shortcuts import render
 # Create your views here.
 
 def datatables(request):
-  return render(request, 'pages/apps/datatables.html')
+  context = {
+    'segment'  : 'datatables',
+    'parent'   : 'apps',
+  }
+  return render(request, 'pages/apps/datatables.html', context)

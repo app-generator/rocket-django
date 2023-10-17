@@ -65,6 +65,7 @@ def profile(request):
     
     context = {
         'form': form,
+        'segment': 'profile',
     }
     return render(request, 'pages/dashboard/profile.html', context)
 

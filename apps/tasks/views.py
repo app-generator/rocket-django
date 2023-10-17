@@ -33,7 +33,8 @@ def tasks(request):
             'cfgError' : ErrInfo,
             'tasks'    : get_celery_all_tasks(),
             'scripts'  : scripts,
-            'segment'  : 'tasks'
+            'segment'  : 'tasks',
+            'parent'   : 'apps',
         }
 
     # django_celery_results_task_result
