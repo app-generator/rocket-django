@@ -7,6 +7,7 @@ from apps.users.models import Profile
 from apps.users.forms import SigninForm, SignupForm, UserPasswordChangeForm, UserSetPasswordForm, UserPasswordResetForm, ProfileForm
 from django.contrib.auth import logout
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -48,10 +49,11 @@ def signout_view(request):
     return redirect(reverse('signin'))
 
 
+@login_required(login_url='/users/signin/')
 def profile(request):
     profile = get_object_or_404(Profile, user=request.user)
     if request.method == 'POST':
-        form = ProfileForm(request.POST, request.FILES, instance=profile)
+        form = ProfileForm(request.POST, instance=profile)
 
         if form.is_valid():
             form.save()
@@ -62,3 +64,11 @@ def profile(request):
         'form': form,
     }
     return render(request, 'pages/dashboard/profile.html', context)
+
+
+def upload_avatar(request):
+    profile = get_object_or_404(Profile, user=request.user)
+    if request.method == 'POST':
+        profile.avatar = request.FILES.get('avatar')
+        profile.save()
+    return redirect(request.META.get('HTTP_REFERER'))

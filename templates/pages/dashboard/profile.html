@@ -4,65 +4,6 @@
 
 {% block content %}
 
-{% comment %} <main>
-    <div class="px-4 pt-6 flex flex-row gap-7">
-        <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <div class="flex justify-end px-4 pt-4">
-                <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
-                    <span class="sr-only">Open dropdown</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
-                        <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
-                    </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                    <ul class="py-2" aria-labelledby="dropdownButton">
-                    <li>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex flex-col items-center pb-10">
-                {% if request.user.profile.avatar %}
-                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="{{ request.user.profile.avatar.url }}" alt="Bonnie image"/>
-                {% else %}
-                    <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="{% static "dist/img/default-user.png" %}" alt="Bonnie image"/>
-                {% endif %}
-                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                    {% if request.user.profile.full_name %}
-                        {{request.user.profile.full_name}}
-                    {% else %}
-                        {{ request.user.username }}
-                    {% endif %}
-                </h5>
-                <span class="text-sm text-gray-500 dark:text-gray-400 block mb-2">{{ request.user.profile.role }}</span>
-                <span class="text-sm text-gray-500 dark:text-gray-400 block mb-2">{{ request.user.profile.phone }}</span>
-                <span class="text-sm text-gray-500 dark:text-gray-400 block mb-2">{{ request.user.profile.address }}</span>
-            </div>
-        </div>
-
-        <form method="post" class="w-full border border-gray-200 rounded-lg p-3 shadow dark:bg-gray-800 dark:border-gray-700" enctype="multipart/form-data">
-            {% csrf_token %}
-
-            {% for field in form %}
-            <div class="relative z-0 w-full mb-6 group">
-                <label for="{{ field.name }}" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ field.label }}</label>
-                {{ field }}
-            </div>
-            {% endfor %}
-            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-        </form>
-  
-    </div>
-</main> {% endcomment %}
-
 <div class="grid grid-cols-1 px-4 pt-6 xl:grid-cols-3 xl:gap-4 dark:bg-gray-900">
     <div class="mb-4 col-span-full xl:mb-2">
         <nav class="flex mb-5" aria-label="Breadcrumb">
@@ -107,15 +48,19 @@
                     <div class="mb-4 text-sm text-gray-500 dark:text-gray-400">
                         JPG, GIF or PNG. Max size of 800K
                     </div>
-                    <div class="flex items-center space-x-4">
-                        <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-blue-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                            <svg class="w-4 h-4 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"></path><path d="M9 13h2v5a1 1 0 11-2 0v-5z"></path></svg>
-                            Upload picture
-                        </button>
+                    <form method="post" action="{% url "upload_avatar" %}" enctype="multipart/form-data" class="flex items-center space-x-4">
+                        {% csrf_token %}
+                        <label for="avatar">
+                            <div class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-blue-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                <svg class="w-4 h-4 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"></path><path d="M9 13h2v5a1 1 0 11-2 0v-5z"></path></svg>
+                                Upload picture
+                            </div>
+                        </label>
+                        <input onchange="this.form.submit()" type="file" class="hidden" name="avatar" id="avatar">
                         <button type="button" class="py-2 px-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                             Delete
                         </button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -153,7 +98,7 @@
     <div class="col-span-2">
         <div class="p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm 2xl:col-span-2 dark:border-gray-700 sm:p-6 dark:bg-gray-800">
             <h3 class="mb-4 text-xl font-semibold dark:text-white">General information</h3>
-            <form method="post" enctype="multipart/form-data">
+            <form method="post">
                 {% csrf_token %}
 
                 <div class="grid grid-cols-6 gap-6">

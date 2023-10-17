@@ -24,4 +24,5 @@ urlpatterns = [
     ), name='password_reset_complete'),
 
     path('profile/', views.profile, name='profile'),
+    path('upload-avatar/', views.upload_avatar, name='upload_avatar'),
 ]
