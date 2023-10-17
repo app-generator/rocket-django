@@ -8,6 +8,8 @@ from apps.users.forms import SigninForm, SignupForm, UserPasswordChangeForm, Use
 from django.contrib.auth import logout
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.hashers import check_password
+from django.contrib import messages
 
 # Create your views here.
 
@@ -57,6 +59,7 @@ def profile(request):
 
         if form.is_valid():
             form.save()
+            messages.success(request, 'Profile updated successfully')
     else:
         form = ProfileForm(instance=profile)
     
@@ -71,4 +74,16 @@ def upload_avatar(request):
     if request.method == 'POST':
         profile.avatar = request.FILES.get('avatar')
         profile.save()
+        messages.success(request, 'Avatar uploaded successfully')
+    return redirect(request.META.get('HTTP_REFERER'))
+
+
+def change_password(request):
+    user = request.user
+    if request.method == 'POST':
+        if check_password(request.POST.get('current_password'), user.password):
+            user.set_password(request.POST.get('new_password'))
+            messages.success(request, 'Password changed successfully')
+        else:
+            messages.error(request, "Password doesn't match!")
     return redirect(request.META.get('HTTP_REFERER'))
