@@ -14,6 +14,7 @@ import os, random, string
 from pathlib        import Path
 from dotenv         import load_dotenv
 from distutils.util import strtobool 
+from django.contrib import messages
 
 load_dotenv()  # take environment variables from .env.
 
@@ -196,3 +197,11 @@ REST_FRAMEWORK = {
 
 # risky
 SESSION_COOKIE_HTTPONLY=False
+
+
+MESSAGE_TAGS = {
+    messages.INFO: 'text-blue-800 border border-blue-300 bg-blue-50 dark:text-blue-400 dark:border-blue-800',
+    messages.SUCCESS: 'text-green-800 border border-green-300 bg-green-50 dark:text-green-400 dark:border-green-800',
+    messages.WARNING: 'text-yellow-800 border border-yellow-300 bg-yellow-50 dark:text-yellow-300 dark:border-yellow-800',
+    messages.ERROR: 'text-red-800 border border-red-300 bg-red-50 dark:text-red-400 dark:border-red-800',
+}

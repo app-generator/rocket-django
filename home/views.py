@@ -5,7 +5,9 @@ from .models import *
 
 def index(request):
 
-  context = {}
+  context = {
+    'segment': 'dashboard',
+  }
   return render(request, "pages/dashboard/index.html", context)
 
 def starter(request):
