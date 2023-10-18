@@ -236,48 +236,29 @@ if (document.getElementById('new-products-chart')) {
 }
 
 if (document.getElementById('sales-by-category')) {
+    const apiUrl = '/api/product/';
+	let dt = []
+
+	const fetchData = async () => {
+		try {
+			const response = await fetch(apiUrl);
+			const data = await response.json();
+			dt = data
+		} catch (error) {
+			console.error('Error fetching data:', error);
+		}
+	};
+	await fetchData();
+	
+
 	const options = {
 		colors: ['#1A56DB', '#FDBA8C'],
 		series: [
 			{
-				name: 'Desktop PC',
+				name: 'Product',
 				color: '#1A56DB',
-				data: [
-					{ x: '01 Feb', y: 170 },
-					{ x: '02 Feb', y: 180 },
-					{ x: '03 Feb', y: 164 },
-					{ x: '04 Feb', y: 145 },
-					{ x: '05 Feb', y: 194 },
-					{ x: '06 Feb', y: 170 },
-					{ x: '07 Feb', y: 155 },
-				]
+				data: dt.map(product => ({ x: product.name, y: product.price }))
 			},
-			{
-				name: 'Phones',
-				color: '#FDBA8C',
-				data: [
-					{ x: '01 Feb', y: 120 },
-					{ x: '02 Feb', y: 294 },
-					{ x: '03 Feb', y: 167 },
-					{ x: '04 Feb', y: 179 },
-					{ x: '05 Feb', y: 245 },
-					{ x: '06 Feb', y: 182 },
-					{ x: '07 Feb', y: 143 }
-				]
-			},
-			{
-				name: 'Gaming/Console',
-				color: '#17B0BD',
-				data: [
-					{ x: '01 Feb', y: 220 },
-					{ x: '02 Feb', y: 194 },
-					{ x: '03 Feb', y: 217 },
-					{ x: '04 Feb', y: 279 },
-					{ x: '05 Feb', y: 215 },
-					{ x: '06 Feb', y: 263 },
-					{ x: '07 Feb', y: 183 }
-				]
-			}
 		],
 		chart: {
 			type: 'bar',
@@ -511,7 +492,8 @@ if (document.getElementById('week-signups-chart')) {
 	});
 }
 
-const getTrafficChannelsChartOptions = () => {
+
+const getTrafficChannelsChartOptions = (data) => {
 
 	let trafficChannelsChartColors = {}
 
@@ -526,8 +508,8 @@ const getTrafficChannelsChartOptions = () => {
 	}
 
 	return {
-		series: [70, 5, 25],
-		labels: ['Desktop', 'Tablet', 'Phone'],
+		series: data.map(dt => dt.price),
+		labels: data.map(dt => dt.name),
 		colors: ['#16BDCA', '#FDBA8C', '#1A56DB'],
 		chart: {
 			type: 'donut',
@@ -574,7 +556,7 @@ const getTrafficChannelsChartOptions = () => {
 			},
 			y: {
 				formatter: function (value) {
-					return value + '%';
+					return value;
 				}
 			}
 		},
@@ -591,11 +573,26 @@ const getTrafficChannelsChartOptions = () => {
 }
 
 if (document.getElementById('traffic-by-device')) {
-	const chart = new ApexCharts(document.getElementById('traffic-by-device'), getTrafficChannelsChartOptions());
+	const apiUrl = '/api/product/';
+	let dt = []
+
+	const fetchData = async () => {
+		try {
+			const response = await fetch(apiUrl);
+			const data = await response.json();
+			dt = data
+		} catch (error) {
+			console.error('Error fetching data:', error);
+		}
+	};
+	await fetchData();
+
+
+	const chart = new ApexCharts(document.getElementById('traffic-by-device'), getTrafficChannelsChartOptions(dt));
 	chart.render();
 
 	// init again when toggling dark mode
 	document.addEventListener('dark-mode', function () {
-		chart.updateOptions(getTrafficChannelsChartOptions());
+		chart.updateOptions(getTrafficChannelsChartOptions(dt));
 	});
 }
