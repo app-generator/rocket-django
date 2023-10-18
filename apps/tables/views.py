@@ -29,7 +29,7 @@ def datatables(request):
     'products' : products
   }
   
-  return render(request, 'pages/apps/datatables.html', context)
+  return render(request, 'apps/datatables.html', context)
 
 
 

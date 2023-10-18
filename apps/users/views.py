@@ -70,7 +70,7 @@ def profile(request):
         'form': form,
         'segment': 'profile',
     }
-    return render(request, 'pages/dashboard/profile.html', context)
+    return render(request, 'dashboard/profile.html', context)
 
 
 def upload_avatar(request):
@@ -113,7 +113,7 @@ def user_list(request):
         'users': users,
         'form': form,
     }
-    return render(request, 'pages/apps/users.html', context)
+    return render(request, 'apps/users.html', context)
 
 
 @login_required(login_url='/users/signin/')

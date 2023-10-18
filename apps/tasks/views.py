@@ -41,7 +41,7 @@ def tasks(request):
     task_results = TaskResult.objects.all()
     context["task_results"] = task_results
 
-    html_template = loader.get_template('pages/apps/tasks.html')
+    html_template = loader.get_template('apps/tasks.html')
     return HttpResponse(html_template.render(context, request)) 
 
 def run_task(request, task_name):

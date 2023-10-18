@@ -12,4 +12,4 @@ def index(request):
         'parent'   : 'apps',
         'products': products
     }
-    return render(request, 'pages/apps/charts.html', context)
+    return render(request, 'apps/charts.html', context)

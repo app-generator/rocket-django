@@ -8,9 +8,9 @@ def index(request):
   context = {
     'segment': 'dashboard',
   }
-  return render(request, "pages/dashboard/index.html", context)
+  return render(request, "dashboard/index.html", context)
 
 def starter(request):
 
   context = {}
-  return render(request, "starter.html", context)
+  return render(request, "pages/starter.html", context)
