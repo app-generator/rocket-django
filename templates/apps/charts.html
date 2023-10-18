@@ -4,8 +4,10 @@
 {% block content %}
 
 <main>
+
   <div class="px-4 pt-6">
     <div class="grid gap-4">
+
       <div
         class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
         <div class="items-center justify-between pb-4 border-b border-gray-200 sm:flex dark:border-gray-700">
@@ -24,7 +26,9 @@
               </span>
               Since last month
             </p>
-            <span class="block mr-1.5 text-sm text-blue-500 dark:text-blue-400 mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</span>
+            <span class="block mr-1.5 text-sm text-blue-500 dark:text-blue-400 mt-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+            </span>
           </div>
           <div class="w-full max-w-lg">
             <div date-rangepicker class="grid items-center grid-cols-2 gap-4">
@@ -64,6 +68,7 @@
           </div>
         </div>
         <div class="w-full" id="sales-by-category"></div>
+
         <!-- Card Footer -->
         <div class="flex items-center justify-between pt-3 mt-4 border-t border-gray-200 sm:pt-6 dark:border-gray-700">
           <div>
@@ -128,13 +133,16 @@
           </div>
         </div>
       </div>
+
       <div
         class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
         <div class="flex items-center justify-between pb-4 mb-4 border-b border-gray-200 dark:border-gray-700">
           <div>
             <h3 class="text-base font-normal text-gray-500 dark:text-gray-400">Traffic by device</h3>
             <span class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white">Products</span>
-            <span class="block mr-1.5 text-sm text-blue-500 dark:text-blue-400 mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+            <span class="block mr-1.5 text-sm text-blue-500 dark:text-blue-400 mt-5">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </span>
           </div>
           <a href="#"
             class="inline-flex items-center p-2 text-xs font-medium uppercase rounded-lg text-primary-700 sm:text-sm hover:bg-gray-100 dark:text-primary-500 dark:hover:bg-gray-700">
@@ -223,8 +231,10 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
+
 </main>
 
 
@@ -235,6 +245,8 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 <script>
+
+  // Pull data from the backend
   const products = JSON.parse('{{ products | safe }}');
 
   function getSalesByCategoryOptions(data) {
@@ -310,7 +322,6 @@
       }
     };
   }
-
 
   const trafficByDeviceOptions = (data) => {
     let trafficChannelsChartColors = {};
@@ -400,6 +411,7 @@
       trafficByDeviceChart.updateOptions(trafficByDeviceOptions(products));
     });
   })();
+
 </script>
 
 
