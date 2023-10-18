@@ -27,6 +27,8 @@ urlpatterns = [
     path("charts/", include("apps.charts.urls")),
     path("tables/", include("apps.tables.urls")),
     path("tasks/", include("apps.tasks.urls")),
+    path("__debug__/", include("debug_toolbar.urls")),
 ]
+
 urlpatterns += static(settings.CELERY_LOGS_URL, document_root=settings.CELERY_LOGS_DIR)
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL      , document_root=settings.MEDIA_ROOT     )
