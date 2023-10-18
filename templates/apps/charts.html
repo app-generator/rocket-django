@@ -249,7 +249,7 @@
   // Pull data from the backend
   const products = JSON.parse('{{ products | safe }}');
 
-  function getSalesByCategoryOptions(data) {
+  function getProductsBarChart(data) {
     return {
       colors: ['#1A56DB', '#FDBA8C'],
       series: [{
@@ -323,7 +323,7 @@
     };
   }
 
-  const trafficByDeviceOptions = (data) => {
+  const getProductsPieChart = (data) => {
     let trafficChannelsChartColors = {};
     if (document.documentElement.classList.contains('dark')) {
       trafficChannelsChartColors = {
@@ -401,14 +401,14 @@
   };
 
   (async () => {
-    const salesByCategoryChart = new ApexCharts(document.getElementById('sales-by-category'), getSalesByCategoryOptions(products));
-    salesByCategoryChart.render();
+    const productsBarChart = new ApexCharts(document.getElementById('sales-by-category'), getProductsBarChart(products));
+    productsBarChart.render();
 
-    const trafficByDeviceChart = new ApexCharts(document.getElementById('traffic-by-device'), trafficByDeviceOptions(products));
-    trafficByDeviceChart.render();
+    const productsPieChart = new ApexCharts(document.getElementById('traffic-by-device'), getProductsPieChart(products));
+    productsPieChart.render();
 
     document.addEventListener('dark-mode', function () {
-      trafficByDeviceChart.updateOptions(trafficByDeviceOptions(products));
+      productsPieChart.updateOptions(getProductsPieChart(products));
     });
   })();
 
