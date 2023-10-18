@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.0.10] 2023-10-18
+### Changes
+
+- Update [Charts Page](https://rocket-django.onrender.com/charts/)
+
 ## [0.0.9] 2023-10-14
 ### Changes
 
