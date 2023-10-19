@@ -9,7 +9,16 @@
     </h1>
     <p>
         <strong>TailwindCSS</strong> &bull; <strong>Flowbite</strong> &bull; <strong>API Generator</strong> &bull; <strong>Celery</strong> &bull; <strong>DataTables</strong> &bull; <strong>Charts</strong> &bull; <strong>Docker</strong> &bull; <strong>CI/CD</strong>
-    </p>    
+    </p>  
+    <h3>
+        <a href="https://docs.appseed.us/products/rocket/django/">
+           📖 Read the DOCS
+        </a>
+        &nbsp; &bull; &nbsp; 
+        <a href="https://appseed.us/support/">
+            Get Support 🚀
+        </a>
+    </h3>    
 </div>
 
 <br />
