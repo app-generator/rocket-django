@@ -59,7 +59,23 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
 $ git clone https://github.com/app-generator/rocket-django.git
 $ cd rocket-django
 ```
- 
+
+> Create `.env` from `env.sample`
+
+```env
+DEBUG=False
+
+SECRET_KEY=<STRONG_KEY_HERE>
+
+# For Myql or PgSQL Persistence 
+# DB_ENGINE=mysql
+# DB_HOST=localhost
+# DB_NAME=appseed_rocket_django
+# DB_USERNAME=root
+# DB_PASS=
+# DB_PORT=3306
+```
+
 > Install Node Modules 
 
 ```
@@ -84,36 +100,17 @@ $ npm run dev
 
 > Migrate DB
 
-```
+```bash
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
 > Create Superuser & Start the APP
 
-```
+```bash
 $ python manage.py createsuperuser # create the admin
 $ python manage.py runserver       # start the project
 ```
-
-<br />
-
-## Start With Docker
-
-> Download code
-
-```bash
-$ git clone https://github.com/app-generator/rocket-django.git
-$ cd rocket-django
-```
-
-> Start with Docker Compose
-
-```bash
-$ docker-compose up --build 
-``` 
-
-Visit the app in the browser `localhost:5085`.
 
 <br />
 
@@ -136,6 +133,69 @@ Visit the app in the browser `localhost:5085`.
 | ✓ `Free Support` (GitHub Issues)                                   | ✅ Deployment Assistance                                            | -                                  |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | -                                   | 🛒 `PRE Order`: **[$299](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD) | 🛒 `Order`: **[$2999](https://appseed.gumroad.com/l/rocket-django-custom)** (GUMROAD) |   
+
+<br />
+
+## Start With Docker
+
+> Download code
+
+```bash
+$ git clone https://github.com/app-generator/rocket-django.git
+$ cd rocket-django
+```
+
+> Start with Docker Compose
+
+```bash
+$ docker-compose up --build 
+``` 
+
+Visit the app in the browser `localhost:5085`.
+
+<br />
+
+## Use MySql 
+
+By default, the starter uses SQLite for persistence. In order to use MySql, here are the steps: 
+
+- Start the MySql Server
+- Create a new DataBase
+- Create a new user with full privilegies over the database 
+- Install the MySql Python Driver (used by Django to connect)
+  - `$ pip install mysqlclient`
+- Edit the `.env` with the SQL Driver Information & DB Credentials 
+
+```env
+
+DB_ENGINE=mysql
+DB_HOST=localhost
+DB_NAME=<DB_NAME_HERE>
+DB_USERNAME=<DB_USER_HERE>
+DB_PASS=<DB_PASS_HERE>
+DB_PORT=3306
+
+```
+
+Once the above settings are done, run the migration & cretae tables: 
+
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
+
+<br />
+
+## Production Build
+
+To use the starter in production mode, here are the steps: 
+
+- Set  **DEBUG=False** in `.env`
+- Execute `collectstatic` command
+  - `$ python manage.py collectstatic --no-input`
+
+As a model, feel free to take a look at [build.sh](./build.sh), the file executed by the CI/CD flow for Render:   
+
 
 <br />
 
