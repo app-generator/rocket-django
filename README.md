@@ -120,7 +120,7 @@ $ python manage.py runserver       # start the project
 
 | Free Version                            | PRO - $499 (plus VAT)               | 🚀 Custom - $2999 (plus VAT)         |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
-| ✓ Django 4.2.x                                                     | **Everything in Free**, plus:                                       | **Everything in PRO**, plus:       |
+| ✓ **Django 4.1.12**                                                | **Everything in Free**, plus:                                       | **Everything in PRO**, plus:       |
 | ✓ Best Practices                                                   | ✅ `OAuth` Google, GitHub                                           | ✅ **1mo Custom Development**     | 
 | ✓ **TailwindCSS**/`Flowbite`                                       | ✅ **Stripe** Payments                                              | ✅ **Dedicated Developer**        |
 | ✓ Extended User Model                                              | ✅ **Wagtail** CMS                                                  | ✅ Weekly Sprints                 |
