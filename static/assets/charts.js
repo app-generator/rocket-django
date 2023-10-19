@@ -235,7 +235,7 @@ if (document.getElementById('new-products-chart')) {
 	chart.render();
 }
 
-if (document.getElementById('sales-by-category')) {
+if (document.getElementById('products-bar-chart')) {
     const apiUrl = '/api/product/';
 	let dt = []
 
@@ -325,7 +325,7 @@ if (document.getElementById('sales-by-category')) {
 		}
 	};
 
-	const chart = new ApexCharts(document.getElementById('sales-by-category'), options);
+	const chart = new ApexCharts(document.getElementById('products-bar-chart'), options);
 	chart.render();
 }
 
@@ -572,7 +572,7 @@ const getTrafficChannelsChartOptions = (data) => {
 	};
 }
 
-if (document.getElementById('traffic-by-device')) {
+if (document.getElementById('products-pie-chart')) {
 	const apiUrl = '/api/product/';
 	let dt = []
 
@@ -588,7 +588,7 @@ if (document.getElementById('traffic-by-device')) {
 	await fetchData();
 
 
-	const chart = new ApexCharts(document.getElementById('traffic-by-device'), getTrafficChannelsChartOptions(dt));
+	const chart = new ApexCharts(document.getElementById('products-pie-chart'), getTrafficChannelsChartOptions(dt));
 	chart.render();
 
 	// init again when toggling dark mode
