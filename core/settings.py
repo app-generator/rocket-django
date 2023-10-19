@@ -106,12 +106,31 @@ WSGI_APPLICATION = "core.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+DB_ENGINE   = os.getenv('DB_ENGINE'   , None)
+DB_USERNAME = os.getenv('DB_USERNAME' , None)
+DB_PASS     = os.getenv('DB_PASS'     , None)
+DB_HOST     = os.getenv('DB_HOST'     , None)
+DB_PORT     = os.getenv('DB_PORT'     , None)
+DB_NAME     = os.getenv('DB_NAME'     , None)
+
+if DB_ENGINE and DB_NAME and DB_USERNAME:
+    DATABASES = { 
+      'default': {
+        'ENGINE'  : 'django.db.backends.' + DB_ENGINE, 
+        'NAME'    : DB_NAME,
+        'USER'    : DB_USERNAME,
+        'PASSWORD': DB_PASS,
+        'HOST'    : DB_HOST,
+        'PORT'    : DB_PORT,
+        }, 
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
@@ -164,6 +183,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
+# ### Async Tasks (Celery) Settings ###
 
 CELERY_SCRIPTS_DIR        = os.path.join(BASE_DIR, "tasks_scripts" )
 
@@ -182,12 +202,13 @@ CELERY_RESULT_EXPIRES     = 60*60*24*30 # Results expire after 1 month
 CELERY_ACCEPT_CONTENT     = ["json"]
 CELERY_TASK_SERIALIZER    = 'json'
 CELERY_RESULT_SERIALIZER  = 'json'
+########################################
 
 
 LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-
+# ### API-GENERATOR Settings ###
 API_GENERATOR = {
     'product' : "apps.common.models.Product",
 }
@@ -201,6 +222,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ]
 }
+########################################
 
 # risky
 SESSION_COOKIE_HTTPONLY=False
