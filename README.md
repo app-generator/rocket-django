@@ -8,7 +8,7 @@
         </a>
     </h1>
     <p>
-        <strong>TailwindCSS</strong> &bull; <strong>Flowbite</strong> &bull; <strong>API Generator</strong> &bull; <strong>Celery</strong> &bull; <strong>DataTables</strong> &bull; <strong>Charts</strong> &bull; <strong>Docker</strong> &bull; <strong>CI/CD</strong>
+        <strong>TailwindCSS</strong> &bull; <strong>Flowbite</strong> &bull; <strong>API (DRF)</strong> &bull; <strong>Celery Beat</strong> &bull; <strong>DataTables</strong> &bull; <strong>Charts</strong> &bull; <strong>Docker</strong> &bull; <strong>CI/CD</strong>
     </p>  
     <h3>
         <a href="https://docs.appseed.us/products/rocket/django/">
