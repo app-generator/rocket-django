@@ -1,5 +1,5 @@
 # Core
-django==4.2.6
+django==4.1.12
 python-dotenv==1.0.0
 
 # Deployment
@@ -20,3 +20,6 @@ djangorestframework==3.14.0
 django-api-generator==1.0.17
 
 Pillow==10.0.1
+
+# psycopg2-binary
+# mysqlclient
