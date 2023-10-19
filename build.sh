@@ -13,6 +13,6 @@ pip install -r requirements.txt
 # Collect Static
 python manage.py collectstatic --no-input
 
-# Migrate DB 
-#python manage.py makemigrations
-#python manage.py migrate
+# Migrate DB (Skipped for DEMO)
+# python manage.py makemigrations
+# python manage.py migrate
