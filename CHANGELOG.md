@@ -1,5 +1,13 @@
 # Change Log
 
+## [0.0.11] 2023-10-18
+### Changes
+
+- Update for MySql/PgSQL Usage
+- Update DOCS (readme)
+- Fallback to **Django** `4.1.12`
+  - To avoid [MySql 8 Dependency](https://stackoverflow.com/questions/75986754/django-db-utils-notsupportederror-mysql-8-or-later-is-required-found-5-7-33)
+
 ## [0.0.10] 2023-10-18
 ### Changes
 
