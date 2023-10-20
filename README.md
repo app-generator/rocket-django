@@ -47,7 +47,7 @@ The Django boilerplate with all you need to build your SaaS, AI tool, or any oth
  - 1 hrs for Docker
  - 1 hr Google Oauth
  - ∞ hrs overthinking...
- - Quality [Support](https://appseed.us/support/) via `Email` & [Discord](https://discord.gg/fZC6hup) 
+ - Free [Support](https://appseed.us/support/) via `Email` & [Discord](https://discord.gg/fZC6hup) 
 
 <br />
 
