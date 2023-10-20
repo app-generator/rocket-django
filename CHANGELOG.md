@@ -1,5 +1,13 @@
 # Change Log
 
+## [0.0.12] 2023-10-20
+### Changes
+
+- Refactor [Charts Page](https://rocket-django.onrender.com/charts/)
+- Fix #18 - [Document the API](https://rocket-django.onrender.com/api/docs/)
+  - Via `DRF-spectacular`
+- Fix #14 - Charts, Render Options  
+
 ## [0.0.11] 2023-10-18
 ### Changes
 
