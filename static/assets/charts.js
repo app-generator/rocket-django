@@ -235,100 +235,6 @@ if (document.getElementById('new-products-chart')) {
 	chart.render();
 }
 
-if (document.getElementById('products-bar-chart')) {
-    const apiUrl = '/api/product/';
-	let dt = []
-
-	const fetchData = async () => {
-		try {
-			const response = await fetch(apiUrl);
-			const data = await response.json();
-			dt = data
-		} catch (error) {
-			console.error('Error fetching data:', error);
-		}
-	};
-	await fetchData();
-	
-
-	const options = {
-		colors: ['#1A56DB', '#FDBA8C'],
-		series: [
-			{
-				name: 'Product',
-				color: '#1A56DB',
-				data: dt.map(product => ({ x: product.name, y: product.price }))
-			},
-		],
-		chart: {
-			type: 'bar',
-			height: '420px',
-			fontFamily: 'Inter, sans-serif',
-			foreColor: '#4B5563',
-			toolbar: {
-				show: false
-			}
-		},
-		plotOptions: {
-			bar: {
-				columnWidth: '90%',
-				borderRadius: 3
-			}
-		},
-		tooltip: {
-			shared : true,
-			intersect: false,
-			style: {
-				fontSize: '14px',
-				fontFamily: 'Inter, sans-serif'
-			},
-		},
-		states: {
-			hover: {
-				filter: {
-					type: 'darken',
-					value: 1
-				}
-			}
-		},
-		stroke: {
-			show: true,
-			width: 5,
-			colors: ['transparent']
-		},
-		grid: {
-			show: false
-		},
-		dataLabels: {
-			enabled: false
-		},
-		legend: {
-			show: false
-		},
-		xaxis: {
-			floating: false,
-			labels: {
-				show: false
-			},
-			axisBorder: {
-				show: false
-			},
-			axisTicks: {
-				show: false
-			},
-		},
-		yaxis: {
-			show: false
-		},
-		fill: {
-			opacity: 1
-		}
-	};
-
-	const chart = new ApexCharts(document.getElementById('products-bar-chart'), options);
-	chart.render();
-}
-
 const getVisitorsChartOptions = () => {
 	let visitorsChartColors = {}
 
@@ -493,7 +399,7 @@ if (document.getElementById('week-signups-chart')) {
 }
 
 
-const getTrafficChannelsChartOptions = (data) => {
+const pieChartOptions = (data) => {
 
 	let trafficChannelsChartColors = {}
 
@@ -572,7 +478,100 @@ const getTrafficChannelsChartOptions = (data) => {
 	};
 }
 
-if (document.getElementById('products-pie-chart')) {
+if (document.getElementById('products-bar-chart-api')) {
+    const apiUrl = '/api/product/';
+	let dt = []
+
+	const fetchData = async () => {
+		try {
+			const response = await fetch(apiUrl);
+			const data = await response.json();
+			dt = data
+		} catch (error) {
+			console.error('Error fetching data:', error);
+		}
+	};
+	await fetchData();
+	
+	const options = {
+		colors: ['#1A56DB', '#FDBA8C'],
+		series: [
+			{
+				name: 'Product',
+				color: '#1A56DB',
+				data: dt.map(product => ({ x: product.name, y: product.price }))
+			},
+		],
+		chart: {
+			type: 'bar',
+			height: '420px',
+			fontFamily: 'Inter, sans-serif',
+			foreColor: '#4B5563',
+			toolbar: {
+				show: false
+			}
+		},
+		plotOptions: {
+			bar: {
+				columnWidth: '90%',
+				borderRadius: 3
+			}
+		},
+		tooltip: {
+			shared : true,
+			intersect: false,
+			style: {
+				fontSize: '14px',
+				fontFamily: 'Inter, sans-serif'
+			},
+		},
+		states: {
+			hover: {
+				filter: {
+					type: 'darken',
+					value: 1
+				}
+			}
+		},
+		stroke: {
+			show: true,
+			width: 5,
+			colors: ['transparent']
+		},
+		grid: {
+			show: false
+		},
+		dataLabels: {
+			enabled: false
+		},
+		legend: {
+			show: false
+		},
+		xaxis: {
+			floating: false,
+			labels: {
+				show: false
+			},
+			axisBorder: {
+				show: false
+			},
+			axisTicks: {
+				show: false
+			},
+		},
+		yaxis: {
+			show: false
+		},
+		fill: {
+			opacity: 1
+		}
+	};
+
+	const chart = new ApexCharts(document.getElementById('products-bar-chart-api'), options); 
+	chart.render();
+}
+
+if (document.getElementById('products-pie-chart-api')) {
 	const apiUrl = '/api/product/';
 	let dt = []
 
@@ -588,11 +587,11 @@ if (document.getElementById('products-pie-chart')) {
 	await fetchData();
 
 
-	const chart = new ApexCharts(document.getElementById('products-pie-chart'), getTrafficChannelsChartOptions(dt));
+	const chart = new ApexCharts(document.getElementById('products-pie-chart-api'), pieChartOptions(dt));
 	chart.render();
 
 	// init again when toggling dark mode
 	document.addEventListener('dark-mode', function () {
-		chart.updateOptions(getTrafficChannelsChartOptions(dt));
+		chart.updateOptions(pieChartOptions(dt));
 	});
 }
