@@ -18,6 +18,7 @@ hiredis==2.2.3
 django-celery-results==2.5.1
 djangorestframework==3.14.0
 django-api-generator==1.0.17
+drf-spectacular==0.26.5
 
 Pillow==10.0.1
 
