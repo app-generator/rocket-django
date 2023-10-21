@@ -125,7 +125,7 @@ $ python manage.py runserver       # start the project
 | ✓ `CI/CD` Flow via Render                                          | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -                                  |
 | ✓ `Free Support` (GitHub Issues)                                   | ✅ Deployment Assistance                                            | -                                  |
 | ------------------------------------| ------------------------------------| ------------------------------------|
-| -                                   | 🛒 `PRE Order`: **[$149](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD) | 🛒 `Order`: **[$1999](https://appseed.gumroad.com/l/rocket-django-custom)** (GUMROAD) |   
+| 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                       | 🛒 `PRE Order`: **[$149](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD) | 🛒 `Order`: **[$1999](https://appseed.gumroad.com/l/rocket-django-custom)** (GUMROAD) |   
 
 <br />
 
