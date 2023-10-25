@@ -114,18 +114,19 @@ $ python manage.py runserver       # start the project
 | Free Version                            | PRO - $299 (plus VAT)               | 🚀 Custom - $1999 (plus VAT)         |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.1.12**                                                | **Everything in Free**, plus:                                       | **Everything in PRO**, plus:       |
-| ✓ Best Practices                                                   | ✅ `OAuth` Google, GitHub                                           | ✅ **1mo Custom Development**     | 
+| ✓ Best Practices                                                   | ✅ **OAuth** `Google`, `GitHub`                                     | ✅ **1mo Custom Development**     | 
 | ✓ **TailwindCSS**/`Flowbite`                                       | ✅ **Stripe** Payments                                              | ✅ **Dedicated Developer**        |
 | ✓ Extended User Model                                              | ✅ **Wagtail** CMS                                                  | ✅ Weekly Sprints                 |
-| ✓ [Charts](https://rocket-django.onrender.com/charts/)             | ✅ Multi-Language Support                                           | ✅ Technical SPECS                |
-| ✓ [DataTables](https://rocket-django.onrender.com/tables/)         | ✅ **Sentry** Error Reporting                                       | ✅ Documentation                  |
-| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF` | ✅ Private REPO Access                                              | ✅ **30 days Delivery Warranty**  |
+| ✓ [Charts](https://rocket-django.onrender.com/charts/)             | ✅ **OpenAI/ChatGPT** Integration                                   | ✅ Technical SPECS                |
+| ✓ [DataTables](https://rocket-django.onrender.com/tables/)         | ✅ **Multi-Language** (i18n) Support                                | ✅ Documentation                  |
+| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF` | ✅ **Sentry** `Error Reporting`                                     | ✅ **30 days Delivery Warranty**  |
 | ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)         | ✅ **Unlimited Projects**                                           | -                                  |
-| ✓ `Docker`                                                         | ✅ Lifetime Updates                                                 | -                                  |
-| ✓ `CI/CD` Flow via Render                                          | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -                                  |
-| ✓ `Free Support` (GitHub Issues)                                   | ✅ Deployment Assistance                                            | -                                  |
+| ✓ `Docker`                                                         | ✅ `Private REPO Access`                                            | -                                  |
+| ✓ `CI/CD` Flow via Render                                          | ✅ `Lifetime Updates`                                               | -                                  |
+| ✓ `Free Support` (GitHub Issues)                                   | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -                                  |
+|  -                                                                 | ✅ **Deploy Assistance** via [DeployPRO](https://deploypro.dev/)     | -                                  |
 | ------------------------------------| ------------------------------------| ------------------------------------|
-| 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                       | 🛒 `PRE Order`: **[$149](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD) | 🛒 `Order`: **[$1999](https://appseed.gumroad.com/l/rocket-django-custom)** (GUMROAD) |   
+| 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🛒 `PRE Order`: **[$149](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD) | 🛒 `Order`: **[$1999](https://appseed.gumroad.com/l/rocket-django-custom)** (GUMROAD) |   
 
 <br />
 
