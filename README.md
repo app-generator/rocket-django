@@ -111,7 +111,7 @@ $ python manage.py runserver       # start the project
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
-| Free Version                            | PRO - $299 (plus VAT)               | 🚀 Custom - $1999 (plus VAT)         |  
+| Free Version                            | PRO - 🛒 `PRE Order`: **[$149](https://appseed.gumroad.com/l/rocket-django)**               | 🚀 Custom - $1999 (plus VAT)         |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.1.12**                                                | **Everything in Free**, plus:                                       | **Everything in PRO**, plus:       |
 | ✓ Best Practices                                                   | ✅ **OAuth** `Google`, `GitHub`                                     | ✅ **1mo Custom Development**     | 
@@ -126,7 +126,7 @@ $ python manage.py runserver       # start the project
 | ✓ `Free Support` (GitHub Issues)                                   | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -                                  |
 |  -                                                                 | ✅ **Deploy Assistance** via [DeployPRO](https://deploypro.dev/)     | -                                  |
 | ------------------------------------| ------------------------------------| ------------------------------------|
-| 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🛒 `PRE Order`: **[$149](https://appseed.gumroad.com/l/rocket-django)** (via GUMROAD) | 🛒 `Order`: **[$1999](https://appseed.gumroad.com/l/rocket-django-custom)** (GUMROAD) |   
+| 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) | 🛒 `Order`: **[$1999](https://appseed.gumroad.com/l/rocket-django-custom)** (GUMROAD) |   
 
 <br />
 
