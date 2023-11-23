@@ -12,11 +12,11 @@
     </p>  
     <h3>
         <a href="https://docs.appseed.us/products/rocket/django/">
-           📖 Read the DOCS
+           📖 DOCS
         </a>
         &nbsp; &bull; &nbsp; 
         <a href="https://appseed.us/support/">
-            Get Support 🚀
+            Support 🚀
         </a>
     </h3>    
 </div>
