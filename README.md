@@ -117,7 +117,7 @@ $ python manage.py runserver       # start the project
 | ✓ Best Practices                                                   | ✅ **OAuth** `Google`, `GitHub`                                     | ✅ **CSV Loader & Processor**      | 
 | ✓ **TailwindCSS**/`Flowbite`                                       | ✅ **Stripe** Payments                                              | ✅ **Enhanced DataTables**         |
 | ✓ Extended User Model                                              | ✅ **Wagtail** CMS                                                  | ✅ **Enhanced Charts**             |
-| ✓ [Charts](https://rocket-django.onrender.com/charts/)             | ✅ **Multi-Language** (i18n) Support                                | ✅ Dedicated Support (1 developer) |
+| ✓ [Charts](https://rocket-django.onrender.com/charts/)             | ✅ **Multi-Language** (i18n) Support                                | ✅ Dedicated Support               |
 | ✓ [DataTables](https://rocket-django.onrender.com/tables/)         | ✅ **Sentry** `Error Reporting`                                     | ✅ LIVE Deploy Assistance          |
 | ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF` | ✅ **Unlimited Projects**                                           | -                                  |
 | ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)         | ✅ `Private REPO Access`                                            | -                                  |
