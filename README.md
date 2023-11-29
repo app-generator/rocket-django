@@ -113,18 +113,19 @@ $ python manage.py runserver       # start the project
 
 | Free Version                            | PRO - 🛒 **[$499](https://appseed.gumroad.com/l/rocket-django)** | Enterprise - 🛒 **[$4999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
-| ✓ **Django 4.1.12**                                                | **Everything in Free**, plus:                                        | **Everything in PRO**, plus:       |
-| ✓ Best Practices                                                   | ✅ **OAuth** `Google`, `GitHub`                                     | ✅ **CSV Loader & Processor**      | 
-| ✓ **TailwindCSS**/`Flowbite`                                       | ✅ **Stripe** Payments                                              | ✅ **Enhanced DataTables**         |
-| ✓ Extended User Model                                              | ✅ **Wagtail** CMS                                                  | ✅ **Enhanced Charts**             |
-| ✓ [Charts](https://rocket-django.onrender.com/charts/)             | ✅ **Multi-Language** (i18n) Support                                | ✅ Dedicated Support               |
-| ✓ [DataTables](https://rocket-django.onrender.com/tables/)         | ✅ **Sentry** `Error Reporting`                                     | ✅ LIVE Deploy Assistance          |
-| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF` | ✅ **Unlimited Projects**                                           | -                                  |
-| ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)         | ✅ `Private REPO Access`                                            | -                                  |
-| ✓ `Docker`                                                         | ✅ `Lifetime Updates`                                               | -                                  |
-| ✓ `CI/CD` Flow via Render                                          | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/) | -                                  |
-| ✓ `Free Support` (GitHub Issues)                                   | ❌ **OpenAI/ChatGPT** Integration (Soon)                            | -                                  |
-|  -                                                                 |  -                                                                   | -                                  |
+| ✓ **Django 4.1.12**                                                | **Everything in Free**, plus:                                            | **Everything in PRO**, plus:        |
+| ✓ Best Practices                                                   | ✅ **OAuth** `Google`, `GitHub`                                          | ✅ **CSV to Model Generator**      | 
+| ✓ **TailwindCSS**/`Flowbite`                                       | ✅ **Stripe** Payments                                                   | ✅ **CSV Data Loader**             |
+| ✓ Extended User Model                                              | ✅ **Wagtail** CMS                                                       | ✅ **1 week custom development**   |
+| ✓ [Charts](https://rocket-django.onrender.com/charts/)             | ✅ [Enhanced Charts](https://rocket-django-pro.onrender.com/charts/)     | ✅ Dedicated Support               |
+| ✓ [DataTables](https://rocket-django.onrender.com/tables/)         | ✅ [Enhanced DataTables](https://rocket-django-pro.onrender.com/tables/) | ✅ LIVE Deploy Assistance          |
+| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF` | ✅ **Multi-Language** (i18n) Support                                     | -                                  |
+| ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)         | ✅ **Sentry** `Error Reporting`                                          | -                                  |
+| ✓ `Docker`                                                         | ✅ **Unlimited Projects**                                                | -                                  |
+| ✓ `CI/CD` Flow via Render                                          | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)      | -                                  |
+| ✓ `Free Support` (GitHub Issues)                                   | ✅ `Private REPO Access`                                                 | -                                  |
+|  -                                                                 | ✅ `Lifetime Updates`                                                     | -                                  |
+|  -                                                                 |  -                                                                        | -                                  |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) | 🛒 `Order`: **[$4999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |   
 
