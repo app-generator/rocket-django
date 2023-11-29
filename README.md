@@ -116,7 +116,7 @@ $ python manage.py runserver       # start the project
 | ✓ **Django 4.1.12**                                                | **Everything in Free**, plus:                                            | **Everything in PRO**, plus:        |
 | ✓ Best Practices                                                   | ✅ **OAuth** `Google`, `GitHub`                                          | ✅ **CSV to Model Generator**      | 
 | ✓ **TailwindCSS**/`Flowbite`                                       | ✅ **Stripe** Payments                                                   | ✅ **CSV Data Loader**             |
-| ✓ Extended User Model                                              | ✅ **Wagtail** CMS                                                       | ✅ **1 week custom development**   |
+| ✓ Extended User Model                                              | ✅ **Wagtail** CMS                                                       | ✅ **1 Week Custom Development**   |
 | ✓ [Charts](https://rocket-django.onrender.com/charts/)             | ✅ [Enhanced Charts](https://rocket-django-pro.onrender.com/charts/)     | ✅ Dedicated Support               |
 | ✓ [DataTables](https://rocket-django.onrender.com/tables/)         | ✅ [Enhanced DataTables](https://rocket-django-pro.onrender.com/tables/) | ✅ LIVE Deploy Assistance          |
 | ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF` | ✅ **Multi-Language** (i18n) Support                                     | -                                  |
