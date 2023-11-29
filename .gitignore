@@ -14,6 +14,7 @@ env
 .env
 node_modules
 yarn.lock
+pnpm-lock.yaml
 
 tasks_logs/
 media/
