@@ -52,3 +52,7 @@ Visit https://localhost:8000 to view the application.
 The Asynchronous task handler feature makes it easy to run time-consuming tasks without affecting the user experience. This can be helpful for tasks like sending emails, processing payments, or generating reports.
 
 Rocket Django utilizing celery serves as a valuable tool for streamlining task processes and improving the overall user experience in your web development projects.
+
+## ✅ Resources
+- 👉 [Celery](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) official documentation
+- 👉 Join the [Community](https://discord.com/invite/fZC6hup) and chat with the team behind **Rocket Django**
