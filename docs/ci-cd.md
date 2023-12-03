@@ -90,3 +90,7 @@ python manage.py collectstatic --no-input
 
 ## Conclusion
 **Rocket Django** simplifies the deployment process by providing ready scripts that can take your application from your local machine to a deployed application in seconds. These scripts can up updated to match your project needs.
+
+## ✅ Resources
+- 👉 [Render Blueprint Specification](https://render.com/docs/blueprint-spec) documentation
+- 👉 Join the [Community](https://discord.com/invite/fZC6hup) and chat with the team behind **Rocket Django**
