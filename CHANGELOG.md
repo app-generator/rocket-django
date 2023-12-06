@@ -1,5 +1,17 @@
 # Change Log
 
+## [1.0.0] 2023-12-06
+### Changes
+
+- STABLE Release 
+- DOCS Update:
+  - [Celery](https://github.com/app-generator/rocket-django/blob/main/docs/CELERY.md)
+  - [Charts](https://github.com/app-generator/rocket-django/blob/main/docs/charts.md) via Apex Charts Library
+  - [CI/CD](https://github.com/app-generator/rocket-django/blob/main/docs/ci-cd.md)
+  - [DataTables](https://github.com/app-generator/rocket-django/blob/main/docs/datatables.md)
+  - [Docker](https://github.com/app-generator/rocket-django/blob/main/docs/docker.md)
+  - [Extended User Model](https://github.com/app-generator/rocket-django/blob/main/docs/extended-user.md)
+
 ## [0.0.13] 2023-11-29
 ### Changes
 
