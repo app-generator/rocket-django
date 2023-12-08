@@ -29,7 +29,7 @@
 
 <br />
 
-## Why Rocket Django
+## Why [Rocket Django](https://github.com/app-generator/rocket-django)
 
 #### ***Supercharge your app instantly, launch faster, make $***
 
@@ -261,4 +261,4 @@ At this point, the product should be LIVE.
 <br />
 
 ---
-[Rocket Django](https://github.com/app-generator/rocket-django) - Open-source starter styled with `Tailwind/Flowbite` actively suported by **[AppSeed](https://appseed.us)**.
+[Rocket Django](https://github.com/app-generator/rocket-django) - Open-source starter styled with `Tailwind/Flowbite` actively supported by **[AppSeed](https://appseed.us)**.
