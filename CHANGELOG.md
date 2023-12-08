@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.2] 2023-12-08
+### Changes
+
+- Update Links
+- Update Starter Page
+- Update Sidebar
+
 ## [1.0.1] 2023-12-08
 ### Changes
 
