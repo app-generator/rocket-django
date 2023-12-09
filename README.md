@@ -15,6 +15,10 @@
            📖 DOCS
         </a>
         &nbsp; &bull; &nbsp; 
+        <a href="https://www.youtube.com/watch?v=rSFLcv00Bw8">
+            Video
+        </a>
+        &nbsp; &bull; &nbsp;
         <a href="https://appseed.us/support/">
             Support 🚀
         </a>
