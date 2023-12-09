@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.3] 2023-12-09
+### Changes
+
+- Update DOCS (readme)
+  - [Rocket Django - Video Presentation](https://www.youtube.com/watch?v=rSFLcv00Bw8)
+- Fix #26 - Sidebar - Apps Menu needs to stay expanded  
+
 ## [1.0.2] 2023-12-08
 ### Changes
 
