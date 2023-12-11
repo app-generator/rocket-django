@@ -41,7 +41,7 @@ Login users, process payments and send emails at lightspeed. Spend your time bui
 
 #### ***Rocket your startup in days, not weeks*** 
 
-The Django boilerplate with all you need to build your SaaS, AI tool, or any other web app. From idea to production in 5 minutes.
+The Django boilerplate has all you need to build your SaaS, Analytics tool, or any other type of Web App. From idea to production in 5 minutes.
 
 #### **48+ hours of headaches**
 
@@ -160,7 +160,7 @@ By default, the starter uses SQLite for persistence. In order to use MySql, here
 
 - Start the MySql Server
 - Create a new DataBase
-- Create a new user with full privilegies over the database 
+- Create a new user with full privileges over the database 
 - Install the MySql Python Driver (used by Django to connect)
   - `$ pip install mysqlclient`
 - Edit the `.env` with the SQL Driver Information & DB Credentials 
@@ -176,7 +176,7 @@ DB_PORT=3306
 
 ```
 
-Once the above settings are done, run the migration & cretae tables: 
+Once the above settings are done, run the migration & create tables: 
 
 ```bash
 $ python manage.py makemigrations
@@ -203,7 +203,7 @@ As a model, feel free to take a look at [build.sh](./build.sh), the file execute
 - Create a Blueprint instance
   - Go to https://dashboard.render.com/blueprints this link.
 - Click `New Blueprint Instance` button.
-- Connect your `repo` which you want to deploy.
+- Connect the `repo` that you want to deploy.
 - Fill the `Service Group Name` and click on the `Update Existing Resources` button.
 - Edit the Environment and [specify the PYTHON_VERSION](https://render.com/docs/python-version)
   - Version `3.11.5` was used for **[this deployment](https://rocket-django.onrender.com/)**
