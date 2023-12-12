@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.5] 2023-12-12
+### Changes
+
+- Curate Profile Page
+- Update Sidebar 
+  - Added PRO Links: [Charts](https://rocket-django-pro.onrender.com/charts/) & [DataTables](https://rocket-django-pro.onrender.com/tables/)
+
 ## [1.0.4] 2023-12-12
 ### Changes
 
