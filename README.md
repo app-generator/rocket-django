@@ -115,7 +115,7 @@ $ python manage.py runserver       # start the project
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
-| Free Version                            | PRO - 🛒 **[$499](https://appseed.gumroad.com/l/rocket-django)** | Enterprise - 🛒 **[$4999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |  
+| Free Version                            | PRO - 🛒 **[$499](https://appseed.gumroad.com/l/rocket-django)** | Enterprise - 🛒 **[$4,999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.1.12**                                                 | **Everything in Free**, plus:                                                 | **Everything in PRO**, plus:        |
 | ✓ Best Practices                                                    | ✅ **OAuth** `Google`, `GitHub`                                              | ✅ **CSV to Model Generator**      | 
@@ -131,7 +131,7 @@ $ python manage.py runserver       # start the project
 |  -                                                                  | ✅ `Lifetime Updates`                                                         | -                                  |
 |  -                                                                  |  -                                                                             | -                                  |
 | ------------------------------------| ------------------------------------| ------------------------------------|
-| 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) | 🛒 `Order`: **[$4999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |   
+| 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) | 🛒 `Order`: **[$4,999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |   
 
 <br />
 
