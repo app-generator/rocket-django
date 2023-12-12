@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.4] 2023-12-12
+### Changes
+
+- Update DOCS:
+  - [Charts](https://github.com/app-generator/rocket-django/blob/main/docs/charts.md) (template view) 
+  - [Charts via API](https://github.com/app-generator/rocket-django/blob/main/docs/charts-via-api.md)
+  - [Celery](https://github.com/app-generator/rocket-django/blob/main/docs/celery.md) (rename file)
+ 
 ## [1.0.3] 2023-12-09
 ### Changes
 
