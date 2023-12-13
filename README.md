@@ -118,8 +118,8 @@ $ python manage.py runserver       # start the project
 | Free Version                            | PRO - 🛒 **[$499](https://appseed.gumroad.com/l/rocket-django)** | Enterprise - 🛒 **[$4,999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.1.12**                                                 | **Everything in Free**, plus:                                                 | **Everything in PRO**, plus:          |
-| ✓ Best Practices                                                    | ✅ **OAuth** `Google`, `GitHub`                                              | ✅ **CSV to Model Generator**         | 
-| ✓ **TailwindCSS**/`Flowbite`                                        | ✅ **Enhanced** [Charts](https://rocket-django-pro.onrender.com/charts/)     | ✅ **CSV Data Loader**                |
+| ✓ Best Practices                                                    | ✅ **OAuth** `Google`, `GitHub`                                              | ✅ **[CSV to Model Generator](https://www.youtube.com/watch?v=O6c76T3VYU8)**         | 
+| ✓ **TailwindCSS**/`Flowbite`                                        | ✅ **Enhanced** [Charts](https://rocket-django-pro.onrender.com/charts/)     | ✅ **[CSV Data Loader](https://www.youtube.com/watch?v=O6c76T3VYU8)**                |
 | ✓ Extended User Model                                               | ✅ **Enhanced** [DataTables](https://rocket-django-pro.onrender.com/tables/) | ✅ **2 Weeks Custom Development**     |
 | ✓ `Simple` [Charts](https://rocket-django.onrender.com/charts/)     | ✅ **[File Manager](https://rocket-django-pro.onrender.com/file-manager/)**  | ✅ **1 Hour Video Call Presentation** |
 | ✓ `Simple` [DataTables](https://rocket-django.onrender.com/tables/) | ✅ **Stripe** Payments                                                       | ✅ Dedicated Support                  |
