@@ -135,9 +135,6 @@ $ python manage.py runserver       # start the project
 
 <br />
 
-| ✅ **Stripe** Payments                                                       |
-| ✅ **Wagtail** CMS                                                           |
-
 ## Start With Docker
 
 > 👉 Download code
