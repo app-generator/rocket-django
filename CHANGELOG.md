@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.7] 2023-12-13
+### Changes
+
+- Update DOCS (readme), mention:
+  - **[CSV to Model Generator](https://www.youtube.com/watch?v=O6c76T3VYU8)** - `Video Presentation`
+  - **[CSV Data Loader](https://www.youtube.com/watch?v=O6c76T3VYU8)** - `Video Presentation`
+
 ## [1.0.6] 2023-12-13
 ### Changes
 
