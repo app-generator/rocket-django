@@ -119,21 +119,24 @@ $ python manage.py runserver       # start the project
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.1.12**                                                 | **Everything in Free**, plus:                                                 | **Everything in PRO**, plus:        |
 | ✓ Best Practices                                                    | ✅ **OAuth** `Google`, `GitHub`                                              | ✅ **CSV to Model Generator**      | 
-| ✓ **TailwindCSS**/`Flowbite`                                        | ✅ **Stripe** Payments                                                       | ✅ **CSV Data Loader**             |
-| ✓ Extended User Model                                               | ✅ **Wagtail** CMS                                                           | ✅ **1 Week Custom Development**   |
-| ✓ `Simple` [Charts](https://rocket-django.onrender.com/charts/)     | ✅ **Enhanced** [Charts](https://rocket-django-pro.onrender.com/charts/)     | ✅ Dedicated Support               |
-| ✓ `Simple` [DataTables](https://rocket-django.onrender.com/tables/) | ✅ **Enhanced** [DataTables](https://rocket-django-pro.onrender.com/tables/) | ✅ LIVE Deploy Assistance          |
-| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF`  | ✅ **Multi-Language** (i18n) Support                                         | -                                  |
-| ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)          | ✅ **Sentry** `Error Reporting`                                              | -                                  |
-| ✓ `Docker`                                                          | ✅ **Unlimited Projects**                                                    | -                                  |
+| ✓ **TailwindCSS**/`Flowbite`                                        | ✅ **Enhanced** [Charts](https://rocket-django-pro.onrender.com/charts/)     | ✅ **CSV Data Loader**             |
+| ✓ Extended User Model                                               | ✅ **Enhanced** [DataTables](https://rocket-django-pro.onrender.com/tables/) | ✅ **1 Week Custom Development**   |
+| ✓ `Simple` [Charts](https://rocket-django.onrender.com/charts/)     | ✅ **[File Manager](https://rocket-django-pro.onrender.com/file-manager/)**  | ✅ Dedicated Support               |
+| ✓ `Simple` [DataTables](https://rocket-django.onrender.com/tables/) | ✅ **Stripe** Payments                                                       | ✅ LIVE Deploy Assistance          |
+| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF`  | ✅ **Wagtail** CMS                                                           | -                                  |
+| ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)          | ✅ **Multi-Language** (i18n) Support                                         | -                                  |
+| ✓ `Docker`                                                          | ✅ **Sentry** `Error Reporting`                                              | -                                  |
 | ✓ `CI/CD` Flow via Render                                           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)          | -                                  |
-| ✓ `Free Support` (GitHub Issues)                                    | ✅ `Private REPO Access`                                                     | -                                  |
+| ✓ `Free Support` (GitHub Issues)                                    | ✅ `Unlimited Projects`                                                      | -                                  |
+|  -                                                                  | ✅ `Private REPO Access`                                                      | -                                  |
 |  -                                                                  | ✅ `Lifetime Updates`                                                         | -                                  |
-|  -                                                                  |  -                                                                             | -                                  |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) | 🛒 `Order`: **[$4,999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |   
 
 <br />
+
+| ✅ **Stripe** Payments                                                       |
+| ✅ **Wagtail** CMS                                                           |
 
 ## Start With Docker
 
