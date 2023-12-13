@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.6] 2023-12-13
+### Changes
+
+- Update DOCS (readme)
+  - [File Manager](https://rocket-django-pro.onrender.com/file-manager/) - `PRO Feature`
+
 ## [1.0.5] 2023-12-12
 ### Changes
 
