@@ -53,6 +53,62 @@ class Profile(models.Model):
 The model is implemented by creating a new model called `Profile` that holds a One-To-One relationship with the existing `User` Model through a `OneToOneField`. This allows extra information to be associated with a user. This can be customised to suit your project needs.
 
 
+### The `ProfileForm`
+The `Profile` model has it's form called `ProfileForm` that can be used to add profile details. The `ProfileForm` can be found in `apps/users/forms.py`.
+```py
+# apps/users/forms.py
+...
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        exclude = ('user', 'role', 'avatar',)
+
+    def __init__(self, *args, **kwargs):
+        super(ProfileForm, self).__init__(*args, **kwargs)
+
+        for field_name, field in self.fields.items():
+            self.fields[field_name].widget.attrs['placeholder'] = field.label
+            self.fields[field_name].widget.attrs['class'] = 'shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500'
+            self.fields[field_name].widget.attrs['required'] = False
+```
+
+- To enable the use of the form, it is sent as a context from the views, and rendered on the template. The `profile` function of `apps/users/views.py` shows how this is done.
+```py
+# apps/users/views.py
+def profile(request):
+    profile = get_object_or_404(Profile, user=request.user)
+    if request.method == 'POST':
+        form = ProfileForm(request.POST, instance=profile)
+
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Profile updated successfully')
+    else:
+        form = ProfileForm(instance=profile)
+    
+    context = {
+        'form': form,
+        'segment': 'profile',
+    }
+    return render(request, 'dashboard/profile.html', context)
+```
+
+- This form is used in the `templates/dashboard/profile.html` to allow the update of user data as seen below:
+```jinja
+<!--templates/dashboard/profile.html line 88-->
+{% for field in form %}
+    <div class="col-span-6 sm:col-span-3">
+        <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ field.label }}</label>
+        {{ field }}
+    </div>
+{% endfor %}
+```
+
+Visit http://localhost:8000/users/profile to interact with the **Rocket Django** profile form. This can be adapted easily into any page of the route you want for your application.
+
+![Rocket Django - Styled with Tailwind-Flowbite AppSeed - User profile page](https://github.com/app-generator/dummy/assets/57325382/5488a471-2398-4565-aaf1-fbcfa5b9843b)
+
+
 ## Conclusion
 Easily store additional user data, implement custom authentication logic, and integrate with third-party services, all while maintaining the security and reliability of Django's built-in user model. Take control of your user management and tailor it to your specific needs with Rocket Django.
 
