@@ -132,7 +132,7 @@ $ python manage.py runserver       # start the project
 | ✓ `Simple` [Charts](https://rocket-django.onrender.com/charts/)     | ✅ **[Media Files Manager](https://rocket-django-pro.onrender.com/file-manager/)**  | ✅ **1 Hour Video Call Presentation** |
 | ✓ `Simple` [DataTables](https://rocket-django.onrender.com/tables/) | ✅ **Stripe** Payments                                                              | ✅ Dedicated Support                  |
 | ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF`  | ✅ **Wagtail** CMS                                                                  | ✅ LIVE Deploy Assistance             |
-| ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)          | ✅ **Multi-Language** (i18n) Support                                                | -                                      |
+| ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)          | ✅ **Multi-Language** (i18n) Support                                                | ✅ CI/CD for AWS, Azure, DO           |
 | ✓ `Docker`                                                          | ✅ **Sentry** `Error Reporting`                                                     | -                                      |
 | ✓ `CI/CD` Flow via Render                                           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)                 | -                                      |
 | ✓ `Free Support` (GitHub Issues)                                    | ✅ `Unlimited Projects`                                                             | -                                      |
