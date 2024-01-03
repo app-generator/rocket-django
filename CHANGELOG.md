@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.8] 2024-01-03
+### Changes
+
+- Fix [Change/Recover Password](https://rocket-django.onrender.com/users/password-reset/) flow
+
 ## [1.0.7] 2023-12-13
 ### Changes
 
