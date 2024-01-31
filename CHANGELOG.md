@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.9] 2024-01-31
+### Changes
+
+- Deprecate `distutils`
+  - use `str2bool`
+- Update Deps 
+  - `requirements.txt` 
+
 ## [1.0.8] 2024-01-03
 ### Changes
 
