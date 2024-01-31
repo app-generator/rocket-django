@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os, random, string
 from pathlib        import Path
 from dotenv         import load_dotenv
-from distutils.util import strtobool 
+from str2bool       import str2bool
 from django.contrib import messages
 
 load_dotenv()  # take environment variables from .env.
@@ -29,11 +29,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 if not SECRET_KEY:
     SECRET_KEY = ''.join(random.choice( string.ascii_lowercase  ) for i in range( 32 ))
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = strtobool(os.getenv('DEBUG', "True"))
+# Enable/Disable DEBUG Mode
+DEBUG = str2bool(os.environ.get('DEBUG'))
+#print(' DEBUG -> ' + str(DEBUG) ) 
 
 # Hosts Settings
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.onrender.com', '0.0.0.0']
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5085', 'http://127.0.0.1:8000', 'http://127.0.0.1:5085', 'https://rocket-django.onrender.com']
 
 # Used by DEBUG-Toolbar 
