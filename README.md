@@ -123,7 +123,7 @@ $ python manage.py runserver       # start the project
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
-| Free Version                            | PRO - 🛒 **[$499](https://appseed.gumroad.com/l/rocket-django)** | Enterprise - 🛒 **[$4,999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |  
+| Free Version                            | PRO - 🛒 **[$199](https://appseed.gumroad.com/l/rocket-django)** | Enterprise - 🛒 **[$4,999](https://appseed.gumroad.com/l/rocket-django-enterprise)** |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.1.12**                                                 | **Everything in Free**, plus:                                                       | **Everything in PRO**, plus:          |
 | ✓ Best Practices                                                    | ✅ **OAuth** `Google`, `GitHub`                                                     | ✅ **[CSV to Model Generator](https://www.youtube.com/watch?v=O6c76T3VYU8)**         | 

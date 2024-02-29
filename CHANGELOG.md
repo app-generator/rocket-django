@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.10] 2024-02-29
+### Changes
+
+- [Rocket PRO](https://rocket-django-pro.onrender.com/), update pricing
+  - [$199](https://appseed.gumroad.com/l/rocket-django) (one-time payment) 
+
 ## [1.0.9] 2024-01-31
 ### Changes
 
