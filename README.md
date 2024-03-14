@@ -11,12 +11,12 @@
         <strong>TailwindCSS</strong> &bull; <strong>Flowbite</strong> &bull; <strong>API (DRF)</strong> &bull; <strong>Celery Beat</strong> &bull; <strong>DataTables</strong> &bull; <strong>Charts</strong> &bull; <strong>Docker</strong> &bull; <strong>CI/CD</strong>
     </p>  
     <h3>
-        <a href="https://docs.appseed.us/products/rocket/django/">
-           📖 DOCS
+        <a href="https://rocket-django.onrender.com/">
+           📖 Demo
         </a>
         &nbsp; &bull; &nbsp; 
         <a href="https://www.youtube.com/watch?v=rSFLcv00Bw8">
-            Video
+            Video Presentation
         </a>
         &nbsp; &bull; &nbsp;
         <a href="https://appseed.us/support/">
