@@ -7,6 +7,7 @@
 /node_modules/
 build/
 env
+env_linux
 
 #src
 #*.sqlite*
@@ -14,8 +15,13 @@ env
 #.env
 node_modules
 yarn.lock
-pnpm-lock.yaml
 
 tasks_logs/
+#media/
 
-#media
+apps/common/management
+apps/helpers
+
+#/media/
+!/media/mapper.json
+!/media/Sales.csv
