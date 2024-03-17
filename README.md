@@ -33,7 +33,7 @@
 
 <br />
 
-## Featues
+## `Features`
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
