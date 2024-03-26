@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.0.14] 2024-03-26
+### Changes
+
+- Update DOCS (readme)
+- Update Links
+  - [Django Rocket](https://appseed.us/product/rocket/django/) - `Product page`
+  - [Django Rocket PRO](https://appseed.us/product/rocket-pro/django/) - `PRO Version`
+  - [Django eCommerce](https://appseed.us/product/rocket-ecommerce/django/) - `Premium Starter`
+
 ## [1.0.13] 2023-12-17
 ### Changes
 
