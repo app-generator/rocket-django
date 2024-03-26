@@ -12,7 +12,7 @@
     </p>  
     <h3>
         <a href="https://rocket-django.onrender.com/">
-           📖 Demo
+           Demo
         </a>
         &nbsp; &bull; &nbsp; 
         <a href="https://appseed.us/support/">
@@ -20,7 +20,7 @@
         </a>
         &nbsp; &bull; &nbsp;
         <a href="https://appseed.us/product/rocket-pro/django/">
-            PRO Version
+            PRO Version 
         </a>
     </h3>    
 </div>
