@@ -1,9 +1,9 @@
 <div align="center">
-    <a href="https://rocket-django.onrender.com">
+    <a href="https://appseed.us/product/rocket/django/">
         <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/51070104/272178364-cbac6d97-b2dc-4d95-bab6-891f4ee7d84d.png"" width="64" height="64" alt="Rocket Icon">
     </a>
     <h1>
-        <a href="https://rocket-django.onrender.com">
+        <a href="https://appseed.us/product/rocket/django/">
             Rocket Django
         </a>
     </h1>
@@ -16,7 +16,7 @@
         </a>
         &nbsp; &bull; &nbsp; 
         <a href="https://www.youtube.com/watch?v=rSFLcv00Bw8">
-            Video Presentation
+            Video Intro
         </a>
         &nbsp; &bull; &nbsp;
         <a href="https://appseed.us/support/">
