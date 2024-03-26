@@ -9,7 +9,7 @@
   - [Django Rocket PRO](https://appseed.us/product/rocket-pro/django/) - `PRO Version`
   - [Django eCommerce](https://appseed.us/product/rocket-ecommerce/django/) - `Premium Starter`
 
-## [1.0.13] 2023-12-17
+## [1.0.13] 2024-03-19
 ### Changes
 
 - Update Provisioning
