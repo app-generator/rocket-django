@@ -15,12 +15,12 @@
            📖 Demo
         </a>
         &nbsp; &bull; &nbsp; 
-        <a href="https://www.youtube.com/watch?v=rSFLcv00Bw8">
-            Video Intro
+        <a href="https://appseed.us/support/">
+            Support
         </a>
         &nbsp; &bull; &nbsp;
-        <a href="https://appseed.us/support/">
-            Support 🚀
+        <a href="https://appseed.us/product/rocket-pro/django/">
+            PRO Version
         </a>
     </h3>    
 </div>
@@ -37,7 +37,7 @@
 
 > `Have questions?` Contact **[Support](https://appseed.us/support/)** (Email & Discord) provided by **AppSeed**
 
-| Free Version                            | PRO - 🛒 **[$99](https://appseed.gumroad.com/l/rocket-django)** | [Custom Development](https://appseed.us/custom-development/) |  
+| [Free Version](https://appseed.us/product/rocket/django/)           | [PRO Version](https://appseed.us/product/rocket-pro/django/) | [Custom Development](https://appseed.us/custom-development/) |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.2.9**                                                  | **Everything in Free**, plus:                                                       | **Everything in PRO**, plus:         |
 | ✓ Best Practices                                                    | ✅ **OAuth** `Google`, `GitHub`                                                     | ✅ **1mo Custom Development**       | 
@@ -57,7 +57,7 @@
 
 <br />
 
-## Why [Rocket Django](https://github.com/app-generator/rocket-django)
+## Why [Rocket Django](https://appseed.us/product/rocket/django/)
 
 #### ***Supercharge your app instantly, launch faster, make $***
 
@@ -273,4 +273,4 @@ At this point, the product should be LIVE.
 <br />
 
 ---
-[Rocket Django](https://github.com/app-generator/rocket-django) - Open-source starter styled with `Tailwind/Flowbite` actively supported by **[AppSeed](https://appseed.us)**.
+[Rocket Django](https://appseed.us/product/rocket/django/) - Open-source starter styled with `Tailwind/Flowbite` actively supported by **[AppSeed](https://appseed.us)**.
