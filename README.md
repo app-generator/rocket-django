@@ -52,6 +52,7 @@
 | ✓ `Free Support` (GitHub Issues)                                    | ✅ `Unlimited Projects`                                                             |  -                                   |
 |  -                                                                  | ✅ `Private REPO Access`                                                            |  -                                   |
 |  -                                                                  | ✅ `Lifetime Updates`                                                               |  -                                   |
+| -                                                                   | ✅ [Deployment Assistance](https://deploypro.dev/)                                  | -                                    |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) (PRO) | 🛒 `Order`: **[$3,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |   
 
