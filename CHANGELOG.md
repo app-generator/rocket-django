@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.16] 2024-04-05
+### Changes
+
+- Update Canonical links [ layout pages ]
+- Update Sidebar Links (minor)
+
 ## [1.0.15] 2023-12-28
 ### Changes
 
