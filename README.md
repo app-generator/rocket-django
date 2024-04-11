@@ -123,9 +123,12 @@ $ pip install -r requirements.txt
 
 > 👉 Install **Tailwind/Flowbite** (separate terminal)
 
+> **Node Version**: `v18.20.0` or above
+
 ```bash
 $ npm install
-$ npm run dev        
+$ npm run dev
+$ npx tailwindcss -i ./static/assets/style.css -o ./static/dist/css/output.css --watch
 ```
 
 > 👉 Migrate DB

@@ -6,6 +6,9 @@ set -o errexit
 npm i
 npm run build
 
+# Tailwind 
+npx tailwindcss -i ./static/assets/style.css -o ./static/dist/css/output.css
+
 # Install modules 
 python -m pip install --upgrade pip
 pip install -r requirements.txt

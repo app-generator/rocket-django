@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.17] 2024-04-11
+### Changes
+
+- Update Deps 
+- Updated DOCS (readme)
+- Update NodeVersion 
+
 ## [1.0.16] 2024-04-05
 ### Changes
 
