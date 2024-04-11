@@ -3,9 +3,9 @@
 ## [1.0.17] 2024-04-11
 ### Changes
 
-- Update Deps 
+- Update Deps
 - Updated DOCS (readme)
-- Update NodeVersion 
+- Update Node Version
 
 ## [1.0.16] 2024-04-05
 ### Changes
