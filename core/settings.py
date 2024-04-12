@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken', 
     'drf_spectacular',
     'django_api_gen',
+    'django_browser_reload',
 
     "debug_toolbar",
 ]
@@ -79,6 +80,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 

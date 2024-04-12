@@ -30,6 +30,7 @@ urlpatterns = [
     path("tasks/", include("apps.tasks.urls")),
     path('api/docs/schema', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/'      , SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+    path("__reload__/", include("django_browser_reload.urls")),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
 
