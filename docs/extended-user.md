@@ -1,7 +1,5 @@
 ## Extended User Model
 
-> Intro: What we offer
-
 An extended Django user model is a custom Django model that inherits from Django's built-in User model and adds additional fields or methods to provide more functionality or store more information about users. This is useful when you need to store additional user-specific data or implement custom user management logic beyond what the built-in User model offers.
 
 

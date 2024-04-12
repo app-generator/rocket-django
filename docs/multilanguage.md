@@ -1,7 +1,5 @@
 ## Multilanguage
 
-> Intro: What we offer
-
 - Multilanguage for English, German and Italian
 
 > How to use it 

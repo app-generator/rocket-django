@@ -1,0 +1,28 @@
+{
+    "version":"v1",
+    "input": {
+        "Sales.csv": ""
+    }, 
+    "normalize_col_name": {  
+        "%":"Perc",
+        "$":"USD",
+        "-":"_",
+        " ":"_",
+        "/":"_",
+        "(":"",
+        ")":"",
+        "'":"",
+        ",":"_",
+        "?":"",
+        "_":""
+    },
+    "col_name":{
+        "Sales_BuyerName":"BuyerName"
+    },
+    "col_type":{
+        "Sales_PurchaseDateX":"int"
+    },
+    "col_transformers":{
+        "Sales_PurchaseDateX":"timestamp_%Y-%m-%d"
+    }    
+}

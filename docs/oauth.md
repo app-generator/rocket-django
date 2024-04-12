@@ -1,7 +1,5 @@
 ## OAuth
 
-> Intro: What we offer
-
 - Google and GitHub login using [django-allauth](https://docs.allauth.org/en/latest/installation/quickstart.html) library.
 
 > How to use it 
