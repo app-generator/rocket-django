@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.18] 2024-04-12
+### Changes
+
+- Added `Hot Reload` (template & statics) 
+- Updated DOCS (readme)
+
 ## [1.0.17] 2024-04-11
 ### Changes
 

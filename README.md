@@ -40,19 +40,20 @@
 | [Free Version](https://appseed.us/product/rocket/django/)           | [PRO Version](https://appseed.us/product/rocket-pro/django/) | [Custom Development](https://appseed.us/custom-development/) |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.2.9**                                                  | **Everything in Free**, plus:                                                       | **Everything in PRO**, plus:         |
-| ✓ Best Practices                                                    | ✅ **OAuth** `Google`, `GitHub`                                                     | ✅ **1mo Custom Development**       | 
+| ✓ Hot Reload (templates & statics)                                  | ✅ **OAuth** `Google`, `GitHub`                                                     | ✅ **1mo Custom Development**       | 
 | ✓ **TailwindCSS**/`Flowbite`                                        | ✅ **Enhanced** [Charts](https://rocket-django-pro.onrender.com/charts/)            | ✅ **Team**: PM, Developer, Tester  |
 | ✓ Extended User Model                                               | ✅ **Enhanced** [DataTables](https://rocket-django-pro.onrender.com/tables/)        | ✅ Weekly Sprints                   |
-| ✓ `Simple` [Charts](https://rocket-django.onrender.com/charts/)     | ✅ **[Media Files Manager](https://rocket-django-pro.onrender.com/file-manager/)**  | ✅ Technical SPECS                  |
-| ✓ `Simple` [DataTables](https://rocket-django.onrender.com/tables/) | ✅ **Stripe** Payments                                                              | ✅ Documentation                    |
+| ✓ [Charts](https://rocket-django.onrender.com/charts/)              | ✅ **[Media Files Manager](https://rocket-django-pro.onrender.com/file-manager/)**  | ✅ Technical SPECS                  |
+| ✓ [DataTables](https://rocket-django.onrender.com/tables/)          | ✅ **Stripe** Payments                                                              | ✅ Documentation                    |
 | ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF`  | ✅ **Wagtail** CMS                                                                  | ✅ **30 days Delivery Warranty**    |
 | ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)          | ✅ **Multi-Language** (i18n) Support                                                |  -                                   |
 | ✓ `Docker`                                                          | ✅ **Sentry** `Error Reporting`                                                     |  -                                   |
 | ✓ `CI/CD` Flow via Render                                           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)                 |  -                                   |
 | ✓ `Free Support` (GitHub Issues)                                    | ✅ `Unlimited Projects`                                                             |  -                                   |
-|  -                                                                  | ✅ `Private REPO Access`                                                            |  -                                   |
-|  -                                                                  | ✅ `Lifetime Updates`                                                               |  -                                   |
+| -                                                                   | ✅ `Private REPO Access`                                                            |  -                                   |
+| -                                                                   | ✅ `Lifetime Updates`                                                               |  -                                   |
 | -                                                                   | ✅ [AWS, DO, Azure Deploy Assistance](https://deploypro.dev/)                       | -                                    |
+| -                                                                   | -                                                                                    | -                                    |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) (PRO) | 🛒 `Order`: **[$3,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |   
 
@@ -121,7 +122,7 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-> 👉 Install **Tailwind/Flowbite** (separate terminal)
+> 👉 Install **Tailwind/Flowbite** (another terminal)
 
 > **Node Version**: `v18.20.0` or above
 
