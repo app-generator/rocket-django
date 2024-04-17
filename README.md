@@ -45,7 +45,7 @@
 | ✓ Extended User Model                                               | ✅ **Enhanced** [DataTables](https://rocket-django-pro.onrender.com/tables/)        | ✅ Weekly Sprints                   |
 | ✓ [Charts](https://rocket-django.onrender.com/charts/)              | ✅ **[Media Files Manager](https://rocket-django-pro.onrender.com/file-manager/)**  | ✅ Technical SPECS                  |
 | ✓ [DataTables](https://rocket-django.onrender.com/tables/)          | ✅ **Stripe** Payments                                                              | ✅ Documentation                    |
-| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF`  | ✅ **Wagtail** CMS                                                                  | ✅ **30 days Delivery Warranty**    |
+| ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF`  | ✅ **React** / `ApexCharts` Integration                                             | ✅ **30 days Delivery Warranty**    |
 | ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)          | ✅ **Multi-Language** (i18n) Support                                                |  -                                   |
 | ✓ `Docker`                                                          | ✅ **Sentry** `Error Reporting`                                                     |  -                                   |
 | ✓ `CI/CD` Flow via Render                                           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)                 |  -                                   |

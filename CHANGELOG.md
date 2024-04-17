@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.19] 2024-04-17
+### Changes
+
+- Update [PRO Version](https://appseed.us/product/rocket-pro/django/) Features:
+  - Added React/Webpack
+  - Showcase charts via React ApexCharts
+
 ## [1.0.18] 2024-04-12
 ### Changes
 
