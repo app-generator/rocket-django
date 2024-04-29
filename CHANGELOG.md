@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.20] 2024-04-29
+### Changes
+
+- Updated DOCS (readme)
+
 ## [1.0.19] 2024-04-17
 ### Changes
 
