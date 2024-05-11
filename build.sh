@@ -2,11 +2,9 @@
 # exit on error
 set -o errexit
 
-# Install & Execute WebPack 
+# Install Modules, Webpack and Tailwind set up
 npm i
 npm run build
-
-# Tailwind 
 npx tailwindcss -i ./static/assets/style.css -o ./static/dist/css/output.css
 
 # Install modules 

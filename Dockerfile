@@ -24,9 +24,10 @@ RUN set -uex; \
     apt-get update; \
     apt-get install nodejs -y;
 
-# Install modules and webpack
+# Install Modules, Webpack and Tailwind set up
 RUN npm i
 RUN npm run build
+RUN npx tailwindcss -i ./static/assets/style.css -o ./static/dist/css/output.css
 
 # Manage Assets & DB 
 RUN python manage.py collectstatic --no-input 

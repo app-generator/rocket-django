@@ -40,13 +40,13 @@
 | [Free Version](https://appseed.us/product/rocket/django/)           | [PRO Version](https://appseed.us/product/rocket-pro/django/) | [Custom Development](https://appseed.us/custom-development/) |  
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ **Django 4.2.9**                                                  | **Everything in Free**, plus:                                                       | **Everything in PRO**, plus:         |
-| ✓ **Hot Reload** (templates & static)                               | ✅ **OAuth** `Google`, `GitHub`                                                     | ✅ **1mo Custom Development**       | 
+| ✓ **best Practices**, Modular Codebase                              | ✅ **OAuth** `Google`, `GitHub`                                                     | ✅ **1mo Custom Development**       | 
 | ✓ **TailwindCSS**/`Flowbite`                                        | ✅ **Enhanced** [Charts](https://rocket-django-pro.onrender.com/charts/)            | ✅ **Team**: PM, Developer, Tester  |
 | ✓ Extended User Model                                               | ✅ **Enhanced** [DataTables](https://rocket-django-pro.onrender.com/tables/)        | ✅ Weekly Sprints                   |
 | ✓ [Charts](https://rocket-django.onrender.com/charts/)              | ✅ **[Media Files Manager](https://rocket-django-pro.onrender.com/file-manager/)**  | ✅ Technical SPECS                  |
 | ✓ [DataTables](https://rocket-django.onrender.com/tables/)          | ✅ **Stripe** Payments                                                              | ✅ Documentation                    |
 | ✓ [API](https://rocket-django.onrender.com/api/product/) via `DRF`  | ✅ **React** / `ApexCharts` Integration                                             | ✅ **30 days Delivery Warranty**    |
-| ✓ [Celery Beat](https://rocket-django.onrender.com/tasks/)          | ✅ **Multi-Language** (i18n) Support                                                |  -                                   |
+| ✓ [Celery](https://rocket-django.onrender.com/tasks/)               | ✅ **Multi-Language** (i18n) Support                                                |  -                                   |
 | ✓ `Docker`                                                          | ✅ **Sentry** `Error Reporting`                                                     |  -                                   |
 | ✓ `CI/CD` Flow via Render                                           | ✅ **PRO Support** - [Email & Discord](https://appseed.us/support/)                 |  -                                   |
 | ✓ `Free Support` (GitHub Issues)                                    | ✅ `Unlimited Projects`                                                             |  -                                   |
@@ -96,21 +96,6 @@ $ cd rocket-django
 DEBUG=False
 
 SECRET_KEY=<STRONG_KEY_HERE>
-
-# For Myql or PgSQL Persistence 
-# DB_ENGINE=mysql
-# DB_HOST=localhost
-# DB_NAME=appseed_rocket_django
-# DB_USERNAME=root
-# DB_PASS=
-# DB_PORT=3306
-
-# SMTP configaration
-# EMAIL_HOST=smtp.gmail.com
-# EMAIL_PORT=587
-# EMAIL_USE_TLS=True
-# EMAIL_HOST_USER=
-# EMAIL_HOST_PASSWORD=
 ```
 
 

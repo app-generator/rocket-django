@@ -1,12 +1,15 @@
-version: '3.8'
+version: "3.8"
 services:
-  rocket-django:
-    container_name: rocket_django
+  appseed-app:
+    container_name: appseed-app
     restart: always
-    build: .
+    build:
+      context: .
     networks:
       - db_network
       - web_network
+    volumes:
+      - ./db.sqlite3:/db.sqlite3
   nginx:
     container_name: nginx
     restart: always
@@ -17,11 +20,31 @@ services:
       - ./nginx:/etc/nginx/conf.d
     networks:
       - web_network
-    depends_on: 
-      - rocket-django
+    depends_on:
+      - appseed-app
+  redis:
+    image: redis:7.0.12
+    container_name: redis
+    command: ["redis-server", "--port", "6379", "--slave-read-only", "no"]
+    restart: always
+    ports:
+      - 6379:6379
+    networks:
+      - db_network
+  celery:
+    container_name: celery
+    restart: always
+    build:
+      context: .
+    networks:
+      - db_network
+    environment:
+      DJANGO_SETTINGS_MODULE: "core.settings"
+    command: "celery -A home worker -l info -B"
+    depends_on:
+      - appseed-app
 networks:
   db_network:
     driver: bridge
   web_network:
     driver: bridge
- 

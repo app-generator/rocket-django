@@ -5,7 +5,6 @@ str2bool==1.1
 
 # Utils
 django-debug-toolbar==4.2.0
-django-browser-reload==1.12.1
 Pillow==10.0.1
 
 # Services

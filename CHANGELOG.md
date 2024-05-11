@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.21] 2024-05-11
+### Changes
+
+- Remove Browser Reload
+- Update Docker (added Redis) 
+- Update DOCS (readme)
+
 ## [1.0.20] 2024-04-29
 ### Changes
 
