@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.22] 2024-05-13
+### Changes
+
+- Update [PRO Version](https://appseed.us/product/rocket-pro/django/) Features:
+  - **Enhanced** [DataTables](https://rocket-django-pro.onrender.com/tables/)
+  - Codebase CleanUP
+
 ## [1.0.21] 2024-05-11
 ### Changes
 
