@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.23] 2024-05-15
+### Changes
+
+- Update Sidebar Links 
+- Update Auth Pages
+- Added ADMIN view for superusers
+
 ## [1.0.22] 2024-05-13
 ### Changes
 

@@ -73,22 +73,46 @@ The Django boilerplate has all you need to build your SaaS, Analytics tool, or a
 
  - 1 hrs to setup the project 
  - 2 hrs integrate tooling
- - 2 hrs to handle Stripe
- - 1 hrs for Docker
- - 1 hr Google Oauth
+ - 10 hr for coding Datatables
+ - 5 hr for having thr Charts
+ - 2 hrs for Docker
  - ∞ hrs overthinking...
  - Free [Support](https://appseed.us/support/) via `Email` & [Discord](https://discord.gg/fZC6hup) 
 
 <br />
 
-## Manual Build 
+## Download Sources 
 
-> 👉 Download code
+The product can be downloaded from the [official page](https://appseed.us/product/rocket/django/) or GitHub using GIT:
 
 ```bash
 $ git clone https://github.com/app-generator/rocket-django.git
 $ cd rocket-django
 ```
+
+Once the sources are available in the local filesystem, we can start the project using `Docker` or `manual build`. 
+
+<br />
+
+## Start with `Docker`
+
+```bash
+# Optional (kill all existing containers)
+$ docker container kill $(docker ps -q) ; docker container rm $(docker ps -a -q) ; docker network prune -f 
+# Start the APP
+$ docker-compose up --build 
+```
+
+Visit `http://localhost:5085` in your browser. The app should be up & running. The starter comes with two default users:
+
+- Ordinary user: `test` / `test@appseed.us` / `Pass12__` (the password)
+- Django SuperUser (admin): `admin` / `admin@appseed.us` / `Pass12__` (the password)
+
+Once authenticated with the above credentials, the sidebar shows different items. 
+
+<br />
+
+## Manual Build 
 
 > 👉 Create `.env` from `env.sample`
 
@@ -97,7 +121,6 @@ DEBUG=False
 
 SECRET_KEY=<STRONG_KEY_HERE>
 ```
-
 
 > 👉 Install **Django** modules via `VENV`  
 
@@ -132,24 +155,7 @@ $ python manage.py createsuperuser # create the admin
 $ python manage.py runserver       # start the project
 ```
 
-<br />
-
-## Start With Docker
-
-> 👉 Download code
-
-```bash
-$ git clone https://github.com/app-generator/rocket-django.git
-$ cd rocket-django
-```
-
-> 👉 Start with Docker Compose
-
-```bash
-$ docker-compose up --build 
-``` 
-
-Visit the app in the browser `localhost:5085`.
+At this point, we can start using the starter.
 
 <br />
 
@@ -193,7 +199,6 @@ To use the starter in production mode, here are the steps:
   - `$ python manage.py collectstatic --no-input`
 
 As a model, feel free to take a look at [build.sh](./build.sh), the file executed by the CI/CD flow for Render:   
-
 
 <br />
 
