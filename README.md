@@ -52,7 +52,7 @@
 | ✓ `Free Support` (GitHub Issues)                                    | ✅ `Unlimited Projects`                                                             |  -                                   |
 | -                                                                   | ✅ `Private REPO Access`                                                            |  -                                   |
 | -                                                                   | ✅ `Lifetime Updates`                                                               |  -                                   |
-| -                                                                   | ✅ [AWS, DO, Azure Deploy Assistance](https://deploypro.dev/)                       | -                                    |
+| -                                                                   | ✅ [CI/CD for AWS, DO, Azure](https://appseed.us/terms/#section-ci-cd)              | -                                    |
 | -                                                                   | -                                                                                    | -                                    |
 | ------------------------------------| ------------------------------------| ------------------------------------|
 | 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) (PRO) | 🛒 `Order`: **[$3,999](https://appseed.gumroad.com/l/rocket-package)** (GUMROAD) |   
