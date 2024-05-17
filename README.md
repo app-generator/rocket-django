@@ -49,7 +49,7 @@
 | ✓ `Docker`                                                           | ✅ **Sentry** `Error Reporting`                                               | ✅ [CI/CD for AWS, DO](https://appseed.us/terms/#section-ci-cd) **(Extra)**    |
 | ✓ `Free Support` (GitHub Issues)                                     | ✅ **[Celery](https://rocket-django.onrender.com/tasks/)** (async tasks)      |  -                                   |
 | -                                                                    | ✅ **[Premium Support](https://appseed.us/support/)**                         |  -                                   |
-| -                                                                    | ✅ `Unlimited Projects` (including SaaS)                                      |  -                                   |
+| -                                                                    | ✅ `Unlimited Projects` & **SaaS**                                            |  -                                   |
 | -                                                                    | ✅ `Private REPO Access`                                                      |  -                                   |
 | -                                                                    | ✅ `Lifetime Updates`                                                         |  -                                   |
 | ------------------------------------| ------------------------------------| ------------------------------------|
