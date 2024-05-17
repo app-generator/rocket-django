@@ -53,7 +53,7 @@
 | -                                                                   | ✅ `Private REPO Access`                                                            |  -                                   |
 | -                                                                   | ✅ `Lifetime Updates`                                                               |  -                                   |
 | ------------------------------------| ------------------------------------| ------------------------------------|
-| 🚀 [LIVE Demo](https://rocket-django.onrender.com/)                | 🚀 [LIVE Demo](https://rocket-django-pro.onrender.com/) (PRO) | 🛒 `Order`: **[$999](https://appseed.gumroad.com/l/rocket-package-week)** (GUMROAD) |   
+| ✓ [Rocket Demo](https://rocket-django.onrender.com/)                | 🚀 [Rocket PRO Demo](https://rocket-django-pro.onrender.com/) (PRO) | 🛒 `Order`: **[$999](https://appseed.gumroad.com/l/rocket-package-week)** (GUMROAD) |   
 
 <br />
 
