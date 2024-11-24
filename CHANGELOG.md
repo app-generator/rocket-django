@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.27] 2024-11-24
+### Changes
+
+- Update RM Links
+  - [Rocket Django](https://app-generator.dev/product/rocket/django/) - Product Page
+  - [Rocket Django](https://app-generator.dev/docs/products/django/rocket/index.html) - Documentation
+  - [Rocket Django PRO](https://app-generator.dev/product/rocket-pro/django/) - The premium version
+
 ## [1.0.26] 2024-05-18
 ### Changes
 
