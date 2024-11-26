@@ -4,18 +4,15 @@ Open-source **Django Template styled with Tailwind CSS/Flowbite**.The product is
 
 A common set of features is provided out-of-the-box: **API, DataTables, Charts, Extended User Model, and Docker Support** under a permissive MIT License (**unrestricted usage in hobby or commercial projects**).
 
-- 👉 [Django Rocket](https://app-generator.dev/product/rocket/django/) - Product Page 
-- 👉 [Django Rocket](https://rocket-django.onrender.com) - LIVE Demo 
-- 👉 **[Django Rocket Documentation](https://app-generator.dev/docs/products/django/rocket/index.html)** - Complete information and Support Links
-  - [Getting Started with Django](https://app-generator.dev/docs/technologies/django/index.html)
-  - Prerequisites
-  - Start in Docker
-  - Codebase
-  - Install Tailwind CSS/Flowbite
-  - Manual Build
-  - Setting up the Database
-  - Start the project
-  - Deploy on Render 
+- 👉 [Django Rocket](https://app-generator.dev/product/rocket/django/) - `Product Page`
+- 👉 [Django Rocket](https://rocket-django.onrender.com) - `LIVE Demo` 
+- 👉 [Django Rocket Documentation](https://app-generator.dev/docs/products/django/rocket/index.html) - `Complete Information` and Support Links
+  - [Getting Started with Django](https://app-generator.dev/docs/technologies/django/index.html) - a `comprehensive tutorial`
+  - `Configuration`: Install Tailwind/Flowbite, Prepare Environment, Setting up the Database 
+  - `Start with Docker`
+  - `Manual Build`
+  - `Start the project`
+  - `Deploy on Render`
 
 <br />
 
