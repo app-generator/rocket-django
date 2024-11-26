@@ -111,5 +111,5 @@ Visit http://localhost:8000/users/profile to interact with the **Rocket Django**
 Easily store additional user data, implement custom authentication logic, and integrate with third-party services, all while maintaining the security and reliability of Django's built-in user model. Take control of your user management and tailor it to your specific needs with Rocket Django.
 
 ## ✅ Resources
-- 👉 [Rocket Django](https://docs.appseed.us/products/rocket/django/) product offering
+- 👉 [Rocket Django](https://app-generator.dev/docs/products/django/rocket/index.html) product offering
 - 👉 Join the [Community](https://discord.com/invite/fZC6hup) and chat with the team behind **Rocket Django**
