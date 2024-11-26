@@ -1,25 +1,34 @@
 # [Django Rocket](https://app-generator.dev/product/rocket/django/)
 
-Open-source **Django Starter with Rocket Design**, a product styled with Tailwind/Flowbite.
-The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
+Open-source **Django Template styled with Tailwind CSS/Flowbite**.The product is designed to deliver the best possible developer experience with highly customizable feature-rich pages. 
 
-- 👉 [Django Rocket](https://app-generator.dev/docs/products/django/rocket/index.html) - **Complete Documentation**
+A common set of features is provided out-of-the-box: **API, DataTables, Charts, Extended User Model, and Docker Support** under a permissive MIT License (**unrestricted usage in hobby or commercial projects**).
+
+- 👉 [Django Rocket](https://app-generator.dev/product/rocket/django/) - Product Page 
 - 👉 [Django Rocket](https://rocket-django.onrender.com) - LIVE Demo 
-- 👉 [Get Support](https://app-generator.dev/ticket/create/) via Email and Discord
+- 👉 **[Django Rocket Documentation](https://app-generator.dev/docs/products/django/rocket/index.html)** - Complete information and Support Links
+  - [Getting Started with Django](https://app-generator.dev/docs/technologies/django/index.html)
+  - Prerequisites
+  - Start in Docker
+  - Codebase
+  - Install Tailwind CSS/Flowbite
+  - Manual Build
+  - Setting up the Database
+  - Start the project
+  - Deploy on Render 
 
 <br />
 
 ## Features
 
-- Simple, Easy-to-Extend codebase
-- Styling: Flowbite/Tailwind
-- Extended User Model
-- ApexJS Charts
-- DataTables 
-- API
-- DB Persistence: SQLite/MySql/PostgreSQL
-- Docker 
-- CI/CD integration for Render 
+- Styling: **Tailwind CSS/Flowbite**
+- **Extended User Model**
+- [Charts](https://rocket-django.onrender.com/charts/) via ApexJS
+- [DataTables](https://rocket-django.onrender.com/tables/) 
+- [API](https://rocket-django.onrender.com/api/product/)
+- Can be used with **SQLite**, **MySql**, **PostgreSQL**, **MsSql**
+- **Docker**
+- **CI/CD Integration** with Render 
 
 ![Django Rocket - Open-Source Django Starter styled with Tailwind](https://github.com/user-attachments/assets/d7527d5e-046c-4679-8f72-525290a5edd5)
 
@@ -27,8 +36,7 @@ The product is designed to deliver the best possible user experience with highly
 
 ## [Rocket PRO Version](https://app-generator.dev/product/rocket-pro/django/)
 
-> The premium version provides more features, priority on support, and is more often updated - [Live Demo](https://rocket-django-pro.onrender.com/)
-
+> The premium version provides more features, priority on support, and is more often updated - [Live Demo](https://rocket-django-pro.onrender.com/).
 
 - **Simple, Easy-to-Extend** Codebase
 - **Rocket** Design
@@ -46,4 +54,4 @@ The product is designed to deliver the best possible user experience with highly
 <br />
 
 ---
-[Django Rocket](https://app-generator.dev/product/rocket/django/) - Open-Source **Django & Tailwind** Starter provided by [App Generator](https://app-generator.dev)
+**[Django Rocket](https://app-generator.dev/product/rocket/django/)** - Open-Source **Django & Tailwind CSS/Flowbite** Starter provided by [App Generator](https://app-generator.dev)
