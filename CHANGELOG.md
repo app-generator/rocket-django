@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.29] 2025-01-24
+### Changes
+
+- Update for Python 13
+- Update RM (minor)
+
 ## [1.0.28] 2024-11-26
 ### Changes
 
