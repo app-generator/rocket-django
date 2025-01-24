@@ -5,12 +5,12 @@ str2bool==1.1
 
 # Utils
 django-debug-toolbar==4.2.0
-Pillow==10.0.1
+Pillow==11.1.0
 
 # Services
 celery==5.3.4
 redis==5.0.1
-hiredis==2.2.3
+hiredis==3.1.0
 
 # Tooling
 django-celery-results==2.5.1
