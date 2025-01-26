@@ -3,8 +3,8 @@
 set -o errexit
 
 # Install Modules, Webpack and Tailwind set up
-pnpm i
-pnpm run build
+yarn
+yarn run build
 npx tailwindcss -i ./static/assets/style.css -o ./static/dist/css/output.css
 
 # Install modules 
