@@ -31,6 +31,14 @@ A common set of features is provided out-of-the-box: **API, DataTables, Charts, 
 
 <br />
 
+## Deploy LIVE
+
+> One-click deploy (requires to have an account).
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+<br /> 
+
 ## [Rocket PRO Version](https://app-generator.dev/product/rocket-pro/django/)
 
 > The premium version provides more features, priority on support, and is more often updated - [Live Demo](https://rocket-django-pro.onrender.com/).
@@ -47,6 +55,26 @@ A common set of features is provided out-of-the-box: **API, DataTables, Charts, 
 - **Deployment-Ready** for Render 
 
 ![Django Rocket - The premium version](https://github.com/user-attachments/assets/d60069f3-be43-460f-ba03-0da92276f87c)
+
+<br />
+
+## `Customize` with [Django App Generator](https://app-generator.dev/tools/django-generator/)
+
+- Access the [App Generator](https://app-generator.dev/tools/django-generator/) page
+- Select the preferred design
+- (Optional) Design Database: edit models and fields
+- (Optional) Edit the fields for the extended user model
+- (Optional) Enable OAuth for GitHub
+- (Optional) Add Celery (async tasks)
+- (Optional) Enable Dynamic API Module
+- Docker Scripts
+- Render CI/Cd Scripts
+
+**The generated Django project is available as a ZIP Archive and also uploaded to GitHub.**
+
+![Django Generator - User Interface for choosing the Design](https://github.com/user-attachments/assets/b989c434-1c53-49ff-8dda-b46dbfc142ac) 
+
+![Django App Generator - User Interface for Edit the Extended User Model](https://github.com/user-attachments/assets/f1a5fb68-a5ba-49c9-a3ae-91716de09912) 
 
 <br />
 
