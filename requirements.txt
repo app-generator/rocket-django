@@ -17,6 +17,12 @@ django-celery-results==2.5.1
 djangorestframework==3.14.0
 django-api-generator==1.0.17
 drf-spectacular==0.26.5
+astor==0.8.1 
+
+django-jazzmin==3.0.1
+
+# AI
+anthropic==0.34.2
 
 # Deployment
 whitenoise==6.5.0
