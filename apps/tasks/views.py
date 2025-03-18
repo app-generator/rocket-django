@@ -6,10 +6,10 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 from celery import current_app
-from home.tasks import execute_script, get_scripts
+from apps.pages.tasks import execute_script, get_scripts
 from django_celery_results.models import TaskResult
 from celery.contrib.abortable import AbortableAsyncResult
-from home.celery import app
+from apps.pages.celery import app
 from django.http import HttpResponse, Http404
 from os import listdir
 from os.path import isfile, join
