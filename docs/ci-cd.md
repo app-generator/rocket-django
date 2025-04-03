@@ -51,7 +51,7 @@ services:
     env: python
     region: frankfurt  # region should be the same as your database region.
     buildCommand: "./build.sh"
-    startCommand: "gunicorn core.wsgi:application"
+    startCommand: "gunicorn config.wsgi:application"
     envVars:
       - key: DEBUG
         value: False

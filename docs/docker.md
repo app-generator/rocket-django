@@ -112,7 +112,7 @@ RUN python manage.py makemigrations
 RUN python manage.py migrate
 
 # gunicorn
-CMD ["gunicorn", "--config", "gunicorn-cfg.py", "core.wsgi"]
+CMD ["gunicorn", "--config", "gunicorn-cfg.py", "config.wsgi"]
 ```
 
 This Dockerfile defines a multi-stage build for the Rocket Django application, consisting of three stages:

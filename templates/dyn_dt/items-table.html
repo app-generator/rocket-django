@@ -1,0 +1,28 @@
+{% load get_attribute %}
+
+<table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-600">
+    <thead class="bg-gray-100 dark:bg-gray-700">
+      <tr>
+        {% for field_name in db_field_names %}
+        <th id="th_{{ field_name }}_export" scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
+          <div class="group flex items-center gap-2 whitespace-nowrap h-6 w-48">
+            <span class="block">{{ field_name }}</span>
+          </div>
+        </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
+
+      {% for item in items %}
+      <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
+        {% for field_name in db_field_names %}
+          <td class="td_{{ field_name }} p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            {{ item|getattribute:field_name }}
+          </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+
+    </tbody>
+</table>

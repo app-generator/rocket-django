@@ -25,7 +25,7 @@ services:
   redis:
     image: redis:7.0.12
     container_name: redis
-    command: ["redis-server", "--port", "6379", "--slave-read-only", "no"]
+    command: [ "redis-server", "--port", "6379", "--slave-read-only", "no" ]
     restart: always
     ports:
       - 6379:6379
@@ -39,7 +39,7 @@ services:
     networks:
       - db_network
     environment:
-      DJANGO_SETTINGS_MODULE: "core.settings"
+      DJANGO_SETTINGS_MODULE: "config.settings"
     command: "celery -A home worker -l info -B"
     depends_on:
       - appseed-app

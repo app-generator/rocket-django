@@ -31,7 +31,7 @@ CELERY_BROKER="redis://localhost:6379"
 
 - To tell Celery where to find your Django settings, add `DJANGO_SETTINGS_MODULE` to your environmental variables. You can do this by opening a terminal window and running the following command:
 ```bash
-$ export DJANGO_SETTINGS_MODULE=core.settings
+$ export DJANGO_SETTINGS_MODULE=config.settings
 ```
 
 - The Celery configuration file, named `celery.py`, defines how Celery will operate within your Django project. It is located in your `home` directory.
@@ -40,7 +40,7 @@ $ export DJANGO_SETTINGS_MODULE=core.settings
 ...
 if os.environ.get('DJANGO_SETTINGS_MODULE'):
 
-    app = Celery('core')
+    app = Celery('config')
 
     # - namespace='CELERY' means all celery-related configuration keys should have a `CELERY_` prefix.
     app.config_from_object('django.conf:settings', namespace='CELERY')
@@ -49,7 +49,7 @@ if os.environ.get('DJANGO_SETTINGS_MODULE'):
     app.autodiscover_tasks()
 ``` 
 
-- The configuration options for celery can be found in `core/settings.py`. More configuration options can be found in Celery's [documentation](https://docs.celeryq.dev/en/stable/userguide/configuration.html)
+- The configuration options for celery can be found in `config/settings.py`. More configuration options can be found in Celery's [documentation](https://docs.celeryq.dev/en/stable/userguide/configuration.html)
 ```py
 CELERY_SCRIPTS_DIR        = os.path.join(BASE_DIR, "tasks_scripts" )
 
