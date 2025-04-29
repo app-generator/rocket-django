@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     "apps.pages",
     "apps.dyn_dt",
     "apps.dyn_api",
-    "apps.common",
     "apps.users",
     "apps.charts", 
     "apps.tasks",
@@ -245,13 +244,13 @@ MESSAGE_TAGS = {
 # ### DYNAMIC_DATATB Settings ###
 DYNAMIC_DATATB = {
     # SLUG -> Import_PATH 
-    'product' : "apps.common.models.Product",
+    'product' : "apps.pages.models.Product",
 }
 ########################################
 
 # Syntax: URI -> Import_PATH
 DYNAMIC_API = {
     # SLUG -> Import_PATH 
-    'product' : "apps.common.models.Product",
+    'product' : "apps.pages.models.Product",
 }
 ########################################

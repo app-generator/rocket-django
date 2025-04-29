@@ -17,7 +17,7 @@ The DataTable feature is implemented using the `tables` application in the `apps
 ```py
 # apps/tables/forms.py
 from django import forms
-from apps.common.models import Product
+from apps.pages.models import Product
 
 
 class ProductForm(forms.ModelForm):
@@ -42,7 +42,7 @@ The model used to create the form was imported from `app/commons/models.py`. Mod
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from apps.tables.forms import ProductForm
-from apps.common.models import Product
+from apps.pages.models import Product
 from django.core.paginator import Paginator
 from django.contrib.auth.decorators import login_required
 from apps.tables.utils import product_filter

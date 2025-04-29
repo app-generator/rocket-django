@@ -29,7 +29,7 @@ Charts in Rocket Django can be created in the `charts` app and rendered as views
 ```py
 # apps/charts/views.py
 from django.shortcuts import render
-from apps.common.models import Product
+from apps.pages.models import Product
 from django.core import serializers
 
 def index(request):

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from apps.common.models import Product
+from apps.pages.models import Product
 from django.core import serializers
 
 

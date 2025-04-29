@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.30] 2025-04-25
+### [Django Rocket](https://app-generator.dev/product/rocket/django/) Changes
+
+- Added Dynamic Tables module
+- Added Dynamic API Module  
+- Added CLI Module for different internal tasks
+
 ## [1.0.29] 2025-01-24
 ### Changes
 
