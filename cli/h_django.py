@@ -16,7 +16,7 @@ from .h_shell       import *
 from .h_code_parser import *
 
 def get_django():
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
     from collections import OrderedDict
     from django.apps import apps
     from django.conf import settings
