@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
 from django.views.static import serve 
+from apps.pages.views import billing, products
 
 urlpatterns = [
     path("", include("apps.pages.urls")),
@@ -30,6 +31,8 @@ urlpatterns = [
     path("users/", include("apps.users.urls")),
     path("charts/", include("apps.charts.urls")),
     path("tasks/", include("apps.tasks.urls")),
+    path("billing/", billing, name="billing"),
+    path("products/", products, name="products"),
     path('api/docs/schema', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/'      , SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path("__debug__/", include("debug_toolbar.urls")),
