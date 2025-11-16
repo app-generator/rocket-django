@@ -10,15 +10,13 @@ A common set of features is provided out-of-the-box: **API, DataTables, Charts, 
 
 <br />
 
-## 👉 [HOSTINGER](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=207452) - High-quality Service we recommend
+## `PROMO` Domains for sale
 
-One of the world's fastest-growing hosting providers, **Hostinger** serves a global community of over 4 million website owners across 150+ countries. 
-**Here are the core services**:
-
-- ✅ **[HOSTING - $2.99/mo](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=207452)** - 3months FREE
-- ✅ **[Website Builder](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=207452&url_id=2949)** - Build Websites in no-time
-- ✅ **[eCommerce Builder](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=207452&url_id=4140)** - Your online store, created quickly with AI
-- ✅ **[StartUp Cloud Hosting - $7.99/mo](https://www.hostg.xyz/aff_c?offer_id=6&aff_id=207452&url_id=17)** - 3months FREE
+- 👉 **[AppSeed.us - $49k](https://appseed.us/)**
+- 👉 **[Admin-Dashboards.com - $15k](https://www.admin-dashboards.com/)**
+- 👉 **[UI-Themes.com - $5k](https://ui-themes.com/)**
+- 👉 **[Simpllo.com - $10k](https://www.simpllo.com/)**
+- 👉 **[123SiteBuilder.net - $5k](https://www.123sitebuilder.net/)**
 
 <br />
 
