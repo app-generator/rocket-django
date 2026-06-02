@@ -10,13 +10,9 @@ A common set of features is provided out-of-the-box: **API, DataTables, Charts, 
 
 <br />
 
-## `PROMO` Domains for sale
+## LICENSE Update
 
-- 👉 **[AppSeed.us - $49k](https://appseed.us/)**
-- 👉 **[Admin-Dashboards.com - $15k](https://www.admin-dashboards.com/)**
-- 👉 **[UI-Themes.com - $5k](https://ui-themes.com/)**
-- 👉 **[Simpllo.com - $10k](https://www.simpllo.com/)**
-- 👉 **[123SiteBuilder.net - $5k](https://www.123sitebuilder.net/)**
+> The **product is available for subscribers ONLY**. For more information, contact [support](https://app-generator.dev/).
 
 <br />
 
