@@ -1,12 +1,12 @@
 # [Django Rocket](https://app-generator.dev/product/rocket/django/)
 
-**Open-source Django Starter** crafted on top of **[Rocket](https://app-generator.dev/product/adminlte/)** design, styled with Tailwind/Flowbite. The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
+**Django Starter** crafted on top of **Rocket** design, styled with Tailwind/Flowbite. The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
 
 A common set of features is provided out-of-the-box: **API, DataTables, Charts, Extended User Model, and Docker Support** under a permissive MIT License (**unrestricted usage in hobby or commercial projects**).
 
 - 👉 [Django Rocket](https://app-generator.dev/product/rocket/django/) - `Product Page`
-- 👉 [Django Rocket](https://rocket-django.onrender.com) - `LIVE Demo` 
-- 👉 [Django Rocket Documentation](https://app-generator.dev/docs/products/django/rocket/index.html) - `Complete Information` and Support Links
+- 👉 [Django Rocket](https://rocket-django.app-generator.dev/) - `LIVE Demo` 
+- 👉 [Django Rocket](https://app-generator.dev/docs/products/django/rocket/index.html) - `Documentation`
 
 <br />
 
@@ -19,10 +19,10 @@ A common set of features is provided out-of-the-box: **API, DataTables, Charts, 
 ## Features
 
 - Simple, Easy-to-Extend Codebase
-- [Rocket](https://app-generator.dev/product/rocket/) Design Integration 
+- Rocket Design Integration 
 - Styling: **Tailwind CSS/Flowbite**
-- Dynamic Tables - read [docs](https://app-generator.dev/docs/developer-tools/dynamic-datatables.html)
-- Dynamic API - read [docs](https://app-generator.dev/docs/developer-tools/dynamic-api.html)
+- Dynamic Tables 
+- Dynamic API
 - Charts
 - [Django CLI Package](https://app-generator.dev/docs/developer-tools/django-cli/index.html)
     - [Commit/rollback Git Changes](https://app-generator.dev/docs/developer-tools/django-cli/git-interface.html)
@@ -53,7 +53,6 @@ A common set of features is provided out-of-the-box: **API, DataTables, Charts, 
 - **Simple, Easy-to-Extend** Codebase
 - **Rocket** Design
 - Tailwind/Flowbite CSS
-- **OAuth** - Github
 - **Extended User Profile**
 - **API** via DRF 
 - **Charts** via ApexJS 
