@@ -2,7 +2,7 @@
 
 A modern, modular Django boilerplate styled entirely with Rocket Design using Tailwind CSS and the Flowbite component library. This starter combines a utility-first frontend with an advanced Django backend setup, complete with Docker support and a custom CLI, allowing you to build and deploy highly optimized interfaces quickly.
 
-> Provided by [App-Generator](https://app-generator.dev/) - Helping entrepreneurs build products with continuous human support
+> Provided by [App-Generator](https://app-generator.dev/) - **Helping entrepreneurs build products with continuous human support**
 
 <br />
 
@@ -34,4 +34,4 @@ A modern, modular Django boilerplate styled entirely with Rocket Design using Ta
 <br />
 
 ---
-[App-Generator](https://app-generator.dev/) - Helping entrepreneurs build products with continuous human support
+Provided by [App-Generator](https://app-generator.dev/) - **Helping entrepreneurs build products with continuous human support**
