@@ -1,12 +1,9 @@
 # [Django Rocket](https://app-generator.dev/product/rocket/django/)
 
-**Django Starter** crafted on top of **Rocket** design, styled with Tailwind/Flowbite. The product is designed to deliver the best possible user experience with highly customizable feature-rich pages. 
-
-A common set of features is provided out-of-the-box: **API, DataTables, Charts, Extended User Model, and Docker Support** under a permissive MIT License (**unrestricted usage in hobby or commercial projects**).
+A modern, modular Django boilerplate styled entirely with Rocket Design using Tailwind CSS and the Flowbite component library. This starter combines a utility-first frontend with an advanced Django backend setup, complete with Docker support and a custom CLI, allowing you to build and deploy highly optimized interfaces quickly.
 
 - 👉 [Django Rocket](https://app-generator.dev/product/rocket/django/) - `Product Page`
 - 👉 [Django Rocket](https://rocket-django.app-generator.dev/) - `LIVE Demo` 
-- 👉 [Django Rocket](https://app-generator.dev/docs/products/django/rocket/index.html) - `Documentation`
 
 <br />
 
@@ -16,73 +13,21 @@ A common set of features is provided out-of-the-box: **API, DataTables, Charts, 
 
 <br />
 
-## Features
-
-- Simple, Easy-to-Extend Codebase
-- Rocket Design Integration 
-- Styling: **Tailwind CSS/Flowbite**
-- Dynamic Tables 
-- Dynamic API
-- Charts
-- [Django CLI Package](https://app-generator.dev/docs/developer-tools/django-cli/index.html)
-    - [Commit/rollback Git Changes](https://app-generator.dev/docs/developer-tools/django-cli/git-interface.html)
-    - `Backup & restore DB`
-    - [Interact with Django Core](https://app-generator.dev/docs/developer-tools/django-cli/query-django.html)
-    - `Manage Environment`
-    - `Manage Dependencies`
-- Session-based Authentication, Password recovery
-- DB Persistence: SQLite (default), can be used with MySql, PgSql
-- Docker, CI/CD for Render
-
 ![Django Rocket - Open-Source Django Starter styled with Tailwind](https://github.com/user-attachments/assets/d7527d5e-046c-4679-8f72-525290a5edd5)
 
 <br />
 
-## Deploy LIVE
+## Technical Components & Utility Advantages
 
-> One-click deploy (requires to have an account).
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-
-<br /> 
-
-## [Rocket PRO Version](https://app-generator.dev/product/rocket-pro/django/)
-
-> The premium version provides more features, priority on support, and is more often updated - [Live Demo](https://rocket-django-pro.onrender.com/).
-
-- **Simple, Easy-to-Extend** Codebase
-- **Rocket** Design
-- Tailwind/Flowbite CSS
-- **Extended User Profile**
-- **API** via DRF 
-- **Charts** via ApexJS 
-- **React Integration** (new) 
-- **Celery** (async tasks)
-- **Deployment-Ready** for Render 
-
-![Django Rocket - The premium version](https://github.com/user-attachments/assets/d60069f3-be43-460f-ba03-0da92276f87c)
-
-<br />
-
-## `Customize` with [Django App Generator](https://app-generator.dev/tools/django-generator/)
-
-- Access the [App Generator](https://app-generator.dev/tools/django-generator/) page
-- Select the preferred design
-- (Optional) Design Database: edit models and fields
-- (Optional) Edit the fields for the extended user model
-- (Optional) Enable OAuth for GitHub
-- (Optional) Add Celery (async tasks)
-- (Optional) Enable Dynamic API Module
-- Docker Scripts
-- Render CI/Cd Scripts
-
-**The generated Django project is available as a ZIP Archive and also uploaded to GitHub.**
-
-![Django Generator - User Interface for choosing the Design](https://github.com/user-attachments/assets/b989c434-1c53-49ff-8dda-b46dbfc142ac) 
-
-![Django App Generator - User Interface for Edit the Extended User Model](https://github.com/user-attachments/assets/f1a5fb68-a5ba-49c9-a3ae-91716de09912) 
+- **Utility-First Tailwind & Flowbite UI**: Built on top of Tailwind CSS and Flowbite. This structure eliminates rigid stylesheet overriding, allows for rapid layout adjustments directly in the HTML, and ensures a highly optimized, purged production CSS bundle.
+- **Production-Ready Docker Infrastructure**: Bundled with pre-configured Docker templates for local development and production orchestration, making environmental setup instant and consistent across teams.
+- **Custom Django CLI Package**: Includes an embedded command-line utility designed to automate repetitive management tasks, scaffolding operations, and deployment checks directly from your terminal.
+- Extended Profile Architecture: Features a pre-configured database schema for expanded user profiles and metadata tracking, eliminating the need to modify core user authentication models later.
+- **Dynamic Server-Side Tables & APIs**: Designed to handle heavy datasets efficiently through automated data presentation and schema-driven API endpoint generation directly from your models.
+- **Asynchronous Analytics & Assets**: Equipped with integrated charting wrappers for visual reporting and an embedded File Manager supporting direct in-browser previews for common file types.
+- **Decoupled Frontend Bridge**: Features a pre-wired integration pipeline to cleanly inject and run reactive React components inside your Django views.
 
 <br />
 
 ---
-**[Django Rocket](https://app-generator.dev/product/rocket/django/)** - Open-Source **Django & Tailwind CSS/Flowbite** Starter provided by [App Generator](https://app-generator.dev)
+[Django Rocket](https://app-generator.dev/product/rocket/django/) - Provided by [App-Generator](https://app-generator.dev/) 
