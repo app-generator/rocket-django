@@ -9,7 +9,7 @@ A modern, modular Django boilerplate styled entirely with Rocket Design using Ta
 
 ## LICENSE Update
 
-> The **product is available for subscribers ONLY**. For more information, contact [support](https://app-generator.dev/).
+> **Product is available for subscribers ONLY** - See [Pricing](https://app-generator.dev/terms/).
 
 <br />
 
