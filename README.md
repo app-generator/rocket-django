@@ -30,4 +30,4 @@ A modern, modular Django boilerplate styled entirely with Rocket Design using Ta
 <br />
 
 ---
-[Django Rocket](https://app-generator.dev/product/rocket/django/) - Provided by [App-Generator](https://app-generator.dev/) 
+[Django Rocket](https://app-generator.dev/product/rocket/django/) - Provided by [App-Generator - Helping entrepreneurs build products with continuous human support](https://app-generator.dev/) 
